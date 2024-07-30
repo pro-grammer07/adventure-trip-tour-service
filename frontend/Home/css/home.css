@@ -427,7 +427,47 @@
 }
 /*** Service End ***/
 
+/*** About Start ***/
 
+/* Animation for zooming image on hover */
+.custom-zoom {
+    overflow: hidden; /* Ensures that zoomed image doesn't overflow */
+}
+
+.custom-zoom img {
+    transition: transform 0.5s ease; /* Smooth zoom effect */
+}
+
+.custom-zoom:hover img {
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+/* Animation for sliding up effect when scrolling */
+.custom-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.custom-slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation for sliding up text */
+.custom-slide-up-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.custom-slide-up-text.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*** About End ***/
 /*** Attractions Start ***/
 .attractions {
     position: relative;
