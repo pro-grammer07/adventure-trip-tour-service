@@ -97,66 +97,43 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: var(--bs-white);
-}
-
-.sticky-top {
-    transition: 1s;
-}
-
-.navbar-light .navbar-nav .nav-link {
+    position: fixed;
+    background: transparent;
+    transition: background-color 0.5s;
+  }
+  
+  .sticky-top {
+    position: fixed;
+    height: 80px;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
     position: relative;
-    margin-right: 25px;
-    padding: 35px 0;
+    margin-right: 30px;
+    padding: 20px 0;
     letter-spacing: 1px;
-    color: var(--bs-dark);
+    color: white;
     font-size: 17px;
     font-weight: 500;
     outline: none;
     transition: .5s;
-}
-
-.sticky-top .navbar-light .navbar-nav .nav-link {
-    padding: 20px 0;
-    color: var(--bs-dark);
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
     color: var(--bs-primary);
-}
-
-.navbar-light .navbar-brand img {
-    max-height: 60px;
+  }
+  
+  .navbar-light .navbar-brand img {
+    max-height: 45px;
     transition: .5s;
-}
+    margin-bottom: 5px;
+  }
 
-.sticky-top .navbar-light .navbar-brand img {
-    max-height: 50px;
-}
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
-.dropdown .dropdown-menu a:hover {
-    background: var(--bs-primary);
-    color: var(--bs-white);
-}
-
-.navbar .nav-item:hover .dropdown-menu {
-    transform: rotateX(0deg);
-    visibility: visible;
-    margin-top: 8px !important;
-    background: var(--bs-light);
-    transition: .5s;
-    opacity: 1;
-}
+  .nav-bar.scrolled {
+    background-color: rgba(4, 30, 65, 0.9);
+  }
 
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -258,7 +235,7 @@
     height: 100%;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .6);
     display: flex;
     align-items: center;
 }
@@ -957,7 +934,7 @@
 .footer .footer-item .opening-date .opening-clock {
     display: flex;
     align-items: center;
-    line-height: 35px;
+    line-height: 15px;
 }
 /*** Footer End ***/
 
