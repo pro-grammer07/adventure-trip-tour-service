@@ -18,27 +18,20 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+        if ($(this).scrollTop() > 10) {
+          $('.nav-bar').addClass('scrolled');
+          $('.sticky-top').addClass('shadow-sm').css('top', '0px');
         } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+          $('.nav-bar').removeClass('scrolled');
+          $('.sticky-top').removeClass('shadow-sm').css('top', '0px');
         }
-    });
-
-
+      });
+    
     // Hero Header carousel
     $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
         items: 1,
-        autoplay: true,
-        smartSpeed: 500,
         dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-down"></i>'
-        ],
+        nav : true
     });
 
 
