@@ -320,7 +320,7 @@
 .service {
     position: relative;
     overflow: hidden;
-    background-image: url(../img/carousel-1.jpg);
+    background-image: url(../img/pexels-ashiq-ali-11436188-6182219.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,6 +405,20 @@
 /*** Service End ***/
 
 /*** About Start ***/
+.about{
+    margin-top: 6rem;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+}
+
+.about img {
+    object-fit: cover;
+    height: 100%;
+    margin-top: 3rem;
+}
 
 /* Animation for zooming image on hover */
 .custom-zoom {
@@ -442,8 +456,6 @@
     opacity: 1;
     transform: translateY(0);
 }
-
-
 /*** About End ***/
 /*** Attractions Start ***/
 .attractions {
@@ -738,41 +750,6 @@
 /*** Team End ***/
 
 /*** Testimonial Start ***/
-.testimonial {
-    position: relative;
-    overflow: hidden;
-}
-
-.testimonial::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../img/carousel-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2;
-    animation-name: image-zoom;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition: 1s;
-}
-
-.testimonial::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .7);
-    z-index: -1;
-}
 
 .testimonial .testimonial-carousel .testimonial-item {
     text-align: center;
