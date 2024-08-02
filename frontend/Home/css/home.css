@@ -320,7 +320,7 @@
 .service {
     position: relative;
     overflow: hidden;
-    background-image: url(../img/carousel-1.jpg);
+    background-image: url(../img/pexels-ashiq-ali-11436188-6182219.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,7 +333,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
@@ -342,81 +342,174 @@
     z-index: 5;
 }
 
-.service .service-days {
-    border-radius: 10px;
-    background: var(--bs-white);
-}
-
-.service .service-item {
+.service .service-panel {
+    perspective: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
     position: relative;
-    height: 100%;
-    text-align: center;
-    border-radius: 10px;
-    background: var(--bs-white);
-    z-index: 1;
 }
 
-.service .service-item::after {
-    content: "";
+.service .service-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.service .service-panel:hover .service-inner {
+    transform: rotateY(180deg);
+}
+
+.service .service-front, .service .service-back {
     position: absolute;
     width: 100%;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    background: var(--bs-primary);
-    transition: 0.5s;
-    z-index: 2;
-}
-
-.service .service-item:hover:after {
     height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.service .service-item i {
+.service .service-front {
+    background: #ffffff;
     color: var(--bs-primary);
-    transition: 0.5s;
+    z-index: 2;
+    transform: rotateY(0deg);
 }
 
-.service .service-item:hover i {
-    color: var(--bs-white);
+.service .service-back {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
 
-.service .service-item .service-content {
-    position: relative;
-    z-index: 3;
+.service .service-panel:hover .service-back {
+    opacity: 1;
 }
 
-.service .service-item .service-content p {
-    transition: 0.5s;
+.service .icon {
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
 
-.service .service-item:hover .service-content p {
-    color: var(--bs-white);
+.service .service-panel:hover .icon {
+    color: #ffffff; /* Change icon color to white on hover */
 }
 
-.service .service-item .service-content a.h4 {
-    transition: 0.5s;
+.service .service-front h4 {
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
 
-.service .service-item:hover .service-content a.h4:hover {
-    color: var(--bs-white);
+.service .service-back .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.service .service-back h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.service .service-back p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.service .service-panel:hover .service-front p {
+    opacity: 0;
+}
+
+.service .service-panel:hover .service-back p {
+    opacity: 1;
 }
 /*** Service End ***/
 
 /*** About Start ***/
-
-/* Animation for zooming image on hover */
-.custom-zoom {
-    overflow: hidden; /* Ensures that zoomed image doesn't overflow */
+.about {
+    margin-top: 6rem;
 }
 
-.custom-zoom img {
-    transition: transform 0.5s ease; /* Smooth zoom effect */
+.about .row {
+    display: flex;
+    align-items: center;
 }
 
-.custom-zoom:hover img {
-    transform: scale(1.1); /* Zoom in effect */
+/* Card styles */
+.info-card {
+    background: #f8f9fa;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.image-card {
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.image-card .card-body {
+    padding: 20px;
+}
+
+.image-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.image-card .card-text {
+    font-size: 1rem;
+}
+
+/* Interactive button */
+.interactive-btn {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.interactive-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 /* Animation for sliding up effect when scrolling */
@@ -430,21 +523,10 @@
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Animation for sliding up text */
-.custom-slide-up-text {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.custom-slide-up-text.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
 /*** About End ***/
+
+
+
 /*** Attractions Start ***/
 .attractions {
     position: relative;
@@ -738,41 +820,6 @@
 /*** Team End ***/
 
 /*** Testimonial Start ***/
-.testimonial {
-    position: relative;
-    overflow: hidden;
-}
-
-.testimonial::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../img/carousel-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2;
-    animation-name: image-zoom;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition: 1s;
-}
-
-.testimonial::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .7);
-    z-index: -1;
-}
 
 .testimonial .testimonial-carousel .testimonial-item {
     text-align: center;
