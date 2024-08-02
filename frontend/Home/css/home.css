@@ -333,7 +333,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
@@ -342,67 +342,105 @@
     z-index: 5;
 }
 
-.service .service-days {
-    border-radius: 10px;
-    background: var(--bs-white);
-}
-
-.service .service-item {
+.service .service-panel {
+    perspective: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
     position: relative;
-    height: 100%;
-    text-align: center;
-    border-radius: 10px;
-    background: var(--bs-white);
-    z-index: 1;
 }
 
-.service .service-item::after {
-    content: "";
+.service .service-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.service .service-panel:hover .service-inner {
+    transform: rotateY(180deg);
+}
+
+.service .service-front, .service .service-back {
     position: absolute;
     width: 100%;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    background: var(--bs-primary);
-    transition: 0.5s;
-    z-index: 2;
-}
-
-.service .service-item:hover:after {
     height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.service .service-item i {
+.service .service-front {
+    background: #ffffff;
     color: var(--bs-primary);
-    transition: 0.5s;
+    z-index: 2;
+    transform: rotateY(0deg);
 }
 
-.service .service-item:hover i {
-    color: var(--bs-white);
+.service .service-back {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
 
-.service .service-item .service-content {
-    position: relative;
-    z-index: 3;
+.service .service-panel:hover .service-back {
+    opacity: 1;
 }
 
-.service .service-item .service-content p {
-    transition: 0.5s;
+.service .icon {
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
 
-.service .service-item:hover .service-content p {
-    color: var(--bs-white);
+.service .service-panel:hover .icon {
+    color: #ffffff; /* Change icon color to white on hover */
 }
 
-.service .service-item .service-content a.h4 {
-    transition: 0.5s;
+.service .service-front h4 {
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
 
-.service .service-item:hover .service-content a.h4:hover {
-    color: var(--bs-white);
+.service .service-back .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.service .service-back h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.service .service-back p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.service .service-panel:hover .service-front p {
+    opacity: 0;
+}
+
+.service .service-panel:hover .service-back p {
+    opacity: 1;
 }
 /*** Service End ***/
+
+
+
 
 /*** About Start ***/
 .about{
