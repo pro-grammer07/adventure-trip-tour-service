@@ -126,6 +126,27 @@
         return false;
     });
 
+    const carouselTrack = document.getElementById('carousel-track');
 
+    carouselTrack.addEventListener('animationend', () => {
+      carouselTrack.style.animation = 'none';
+      setTimeout(() => {
+        carouselTrack.style.animation = 'slide 20s linear infinite';
+      }, 0);
+    });
+
+    const carouselTracks = document.querySelectorAll('.carousel__track');
+const firstTrack = carouselTracks[0];
+const lastTrack = carouselTracks[carouselTracks.length - 1];
+
+// Clone the first track and append it to the end
+const firstTrackClone = firstTrack.cloneNode(true);
+carouselTracks[carouselTracks.length - 1].parentNode.appendChild(firstTrackClone);
+
+// Clone the last track and prepend it to the beginning
+const lastTrackClone = lastTrack.cloneNode(true);
+carouselTracks[0].parentNode.insertBefore(lastTrackClone, carouselTracks[0]);
 })(jQuery);
+
+
 

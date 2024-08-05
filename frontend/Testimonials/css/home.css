@@ -635,7 +635,6 @@
     left: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: rgba(0, 0, 0, .3);
     z-index: 1;
 }
 
@@ -645,7 +644,6 @@
     left: 25px;
     border-radius: 10px;
     color: var(--bs-white);
-    background: var(--bs-primary);
     z-index: 5;
 }
 
@@ -660,7 +658,10 @@
 .blog .blog-item .blog-content {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: var(--bs-light);
+}
+
+.blog-content{
+    background-color: white !important;
 }
 /*** Blog End ***/
 
