@@ -1,913 +1,878 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>WaterLand - Water Park Website Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>Adventure Trip & Tour Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet"> 
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/home.css" rel="stylesheet">
-    </head>
+    <!-- Template Stylesheet -->
+    <link href="css/destination.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="display-6 text-dark"><i class="fas fa-swimmer text-primary me-3"></i>WaterLand</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
-                        
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Our Feature</a>
-                                <a href="gallery.html" class="dropdown-item">Our Gallery</a>
-                                <a href="attraction.html" class="dropdown-item">Attractions</a>
-                                <a href="package.html" class="dropdown-item">Ticket Packages</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="" class="navbar-brand p-0">
+                <img src="img/Adventure-tour-and-travels-Logo-white-1024x212.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="../Home/home.html" class="nav-item nav-link active">Home</a>
+                    <a href="../Destination/destination.html" class="nav-item nav-link">Destination</a>
+                    <a href="../Blog/blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="../Testimonials/testimonials.html" class="nav-item nav-link">Testimonial</a>
+                    <a href="../About/about.html" class="nav-item nav-link">About</a>
+                    <a href="../Contact/contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-            </nav>
-        </div>
-        <!-- Navbar & Hero End -->
-
-        <!-- Carousel Start -->
-        <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item">
-                <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption">
-                    <div class="container align-items-center py-4">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
-                                <div class="text-start">
-                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To WaterLand</h4>
-                                    <h1 class="display-4 text-uppercase text-white mb-4">The Biggest Theme & Amusement Park</h1>
-                                    <p class="mb-4 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy... 
-                                    </p>
-                                    <div class="d-flex flex-shrink-0">
-                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Our Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
-                                <div class="ticket-form p-5">
-                                    <h2 class="text-dark text-uppercase mb-4">book your ticket</h2>
-                                    <form>
-                                        <div class="row g-4">
-                                            <div class="col-12">
-                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
-                                            </div>
-                                            <div class="col-12 col-xl-6">
-                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
-                                            </div>
-                                            <div class="col-12 col-xl-6">
-                                                <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
-                                            </div>
-                                            <div class="col-12">
-                                                <select class="form-select border-0 py-2" aria-label="Default select example">
-                                                    <option selected>Select Packages</option>
-                                                    <option value="1">Family Packages</option>
-                                                    <option value="2">Basic Packages</option>
-                                                    <option value="3">Premium Packages</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12">
-                                                <input class="form-control border-0 py-2" type="date">
-                                            </div>
-                                            <div class="col-12">
-                                                <input type="number" class="form-control border-0 py-2" id="number" placeholder="Guest">
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="button" class="btn btn-primary w-100 py-2 px-5">Book Now</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
+                <a href="../Contact/contact.html" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0 top">Get
+                    Started</a>
             </div>
-            <div class="header-carousel-item">
-                <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption">
-                    <div class="container py-4">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
-                                <div class="text-start">
-                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To WaterLand</h4>
-                                    <h1 class="display-4 text-uppercase text-white mb-4">The Greatest Water and Amusement Park</h1>
-                                    <p class="mb-4 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy... 
-                                    </p>
-                                    <div class="d-flex flex-shrink-0">
-                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Our Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
-                                <div class="ticket-form p-5">
-                                    <h2 class="text-dark text-uppercase mb-4">book your ticket</h2>
-                                    <form>
-                                        <div class="row g-4">
-                                            <div class="col-12">
-                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
-                                            </div>
-                                            <div class="col-12 col-xl-6">
-                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
-                                            </div>
-                                            <div class="col-12 col-xl-6">
-                                                <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
-                                            </div>
-                                            <div class="col-12">
-                                                <select class="form-select border-0 py-2" aria-label="Default select example">
-                                                    <option selected>Select Packages</option>
-                                                    <option value="1">Family Packages</option>
-                                                    <option value="2">Basic Packages</option>
-                                                    <option value="3">Premium Packages</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12">
-                                                <input class="form-control border-0 py-2" type="date">
-                                            </div>
-                                            <div class="col-12">
-                                                <input type="number" class="form-control border-0 py-2" id="number" placeholder="Guest">
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="button" class="btn btn-primary w-100 py-2 px-5">Book Now</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel End -->
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
 
-
-        <!-- Feature Start -->
-        <div class="container-fluid feature py-5">
-            <div class="container py-5">
-                <div class="row g-4">
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="feature-item">
-                            <img src="img/feature-1.jpg" class="img-fluid rounded w-100" alt="Image">
-                            <div class="feature-content p-4">
-                                <div class="feature-content-inner">
-                                    <h4 class="text-white">Best Pools</h4>
-                                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro soluta voluptatum laborum mollitia blanditiis suscipit,
-                                    </p>
-                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="feature-item">
-                            <img src="img/feature-2.jpg" class="img-fluid rounded w-100" alt="Image">
-                            <div class="feature-content p-4">
-                                <div class="feature-content-inner">
-                                    <h4 class="text-white">Waterslides</h4>
-                                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro soluta voluptatum laborum mollitia blanditiis suscipit,
-                                    </p>
-                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="feature-item">
-                            <img src="img/feature-3.jpg" class="img-fluid rounded w-100" alt="Image">
-                            <div class="feature-content p-4">
-                                <div class="feature-content-inner">
-                                    <h4 class="text-white">River Rides</h4>
-                                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro soluta voluptatum laborum mollitia blanditiis suscipit,
-                                    </p>
-                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feature End -->
-
-        <!-- About Start -->
-        <div class="container-fluid about pb-5">
-            <div class="container pb-5">
-                <div class="row g-5">
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div>
-                            <h4 class="text-primary">About Waterland</h4>
-                            <h1 class="display-5 mb-4">The Best Theme & Amusement Park For Your Family</h1>
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eligendi illum inventore maiores incidunt vero id. Est ipsam, distinctio veritatis earum inventore ab fugit officiis ut ullam, laudantium facere sapiente?
-                            </p>
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="me-3"><i class="fas fa-glass-cheers fa-3x text-primary"></i></div>
-                                        <div>
-                                            <h4>Food & Drinks</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="me-3"><i class="fas fa-dot-circle fa-3x text-primary"></i></div>
-                                        <div>
-                                            <h4>Many Attractions</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="me-3"><i class="fas fa-hand-holding-usd fa-3x text-primary"></i></div>
-                                        <div>
-                                            <h4>Affordable Price</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="me-3"><i class="fas fa-lock fa-3x text-primary"></i></div>
-                                        <div>
-                                            <h4>Safety Lockers</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="position-relative rounded">
-                            <div class="rounded" style="margin-top: 40px;">
-                                <div class="row g-0">
-                                    <div class="col-lg-12">
-                                        <div class="rounded mb-4">
-                                            <img src="img/about.jpg" class="img-fluid rounded w-100" alt="">
-                                        </div>
-                                        <div class="row gx-4 gy-0">
-                                            <div class="col-6">
-                                                <div class="counter-item bg-primary rounded text-center p-4 h-100">
-                                                    <div class="counter-item-icon mx-auto mb-3">
-                                                        <i class="fas fa-thumbs-up fa-3x text-white"></i>
-                                                    </div>
-                                                    <div class="counter-counting mb-3">
-                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">150</span>
-                                                        <span class="h1 fw-bold text-white">K +</span>
-                                                    </div>
-                                                    <h5 class="text-white mb-0">Happy Visitors</h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="counter-item bg-dark rounded text-center p-4 h-100">
-                                                    <div class="counter-item-icon mx-auto mb-3">
-                                                        <i class="fas fa-certificate fa-3x text-white"></i>
-                                                    </div>
-                                                    <div class="counter-counting mb-3">
-                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">122</span>
-                                                        <span class="h1 fw-bold text-white"> +</span>
-                                                    </div>
-                                                    <h5 class="text-white mb-0">Awwards Winning</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rounded bg-primary p-4 position-absolute d-flex justify-content-center" style="width: 90%; height: 80px; top: -40px; left: 50%; transform: translateX(-50%);">
-                                <h3 class="mb-0 text-white">20 Years Experiance</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Service Start -->
-        <div class="container-fluid service py-5">
-            <div class="container service-section py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Service</h4>
-                    <h1 class="display-5 text-white mb-4">Explore Waterland Park service</h1>
-                    <p class="mb-0 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
-                    <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-days p-4">
-                            <div class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Monday - Friday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>11:00 AM - 16:00 PM</p></div>
-                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Saturday - Sunday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
-                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0">Holiday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
-                        </div>
-                    </div>
-                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
-
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item p-4">
-                            <div class="service-content">
-                                <div class="mb-4">
-                                    <i class="fas fa-home fa-4x"></i>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Private Gazebo</a>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel mb-5">
+        <div class="header-carousel-item">
+            <!--<img src="img/pexels-aakashraf-1619792.jpg" class="img-fluid w-100" alt="Image"-->
+            <video class="img-fluid w-100 video-zoom" width="100%" height="100%" autoplay muted loop> 
+                <source src="img/9974249-hd_1920_1080_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <div class="container align-items-center py-4">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-12 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" data-wow-delay="0.9s"
+                            style="animation-delay: 1s;">
+                            <div class="text-center">
+                                <h4 class="text-uppercase fw-bold mb-4" style="color: #0cf098; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
+                                    Welcome To Adventure
+                                </h4>
+                                
+                                <h1 class="display-4 text-uppercase text-white mb-4">Trip & Tour Services</h1>
+                                <p class="mb-4 fs-5" >Promoting Lovely Nature: Culture Ethics and Colors of Life in
+                                    Pakistan.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item p-4">
-                            <div class="service-content">
-                                <div class="mb-4">
-                                    <i class="fas fa-utensils fa-4x"></i>
+                                <div class="d-flex justify-content-center">
+                                    <a class="btn btn-primary rounded-pill text-white py-3 px-3" href="#">Unleash the
+                                        Adventure</a>
                                 </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Delicious Food</a>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item p-4">
-                            <div class="service-content">
-                                <div class="mb-4">
-                                    <i class="fas fa-door-closed fa-4x"></i>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Safety Lockers</a>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="service-item p-4">
-                            <div class="service-content">
-                                <div class="mb-4">
-                                    <i class="fas fa-swimming-pool fa-4x"></i>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">River Rides</a>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel beatae numquam.
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+    </div>
+    <!-- Carousel End -->
 
-
-        <!-- Ticket Packages Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-12 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="packages-item h-100">
-                            <h4 class="text-primary">Ticket Packages</h4>
-                            <h1 class="display-5 mb-4">Choose The Best Packages For Your Family</h1>
-                            <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                            </p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Best Waterpark in the world</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Best Packages For Your Family</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Enjoy Various Kinds of Water Park</p>
-                            <p class="mb-5"><i class="fa fa-check text-primary me-2"></i>Win Up To 3 Free All Day Tickets</p>
-                            <a href="#" class="btn btn-primary rounded-pill py-3 px-5"> Book Now</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="pricing-item bg-dark rounded text-center p-5 h-100">
-                            <div class="pb-4 border-bottom">
-                                <h2 class="mb-4 text-primary">Family Packages</h2>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorum!</p>
-                                <h2 class="mb-0 text-primary">$260,90<span class="text-body fs-5 fw-normal">/family</span></h2>
-                            </div>
-                            <div class="py-4">
-                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>All Access To Waterpark</p>
-                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Get Two Gazebo</p>
-                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Free Soft Drinks</p>
-                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Get Four Lockers</p>
-                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Free Four Towels</p>
-                            </div>
-                            <a href="#" class="btn btn-light rounded-pill py-3 px-5"> Book Now</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="pricing-item bg-primary rounded text-center p-5 h-100">
-                            <div class="pb-4 border-bottom">
-                                <h2 class="text-dark mb-4">Basic Packages</h2>
-                                <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorum!</p>
-                                <h2 class="text-dark mb-0">$60,90<span class="text-white fs-5 fw-normal">/person</span></h2>
-                            </div>
-                            <div class="text-white py-4">
-                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Get Small Gazebo</p>
-                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Free Soft Drink</p>
-                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Get One Locker</p>
-                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Free Towel</p>
-                            </div>
-                            <a href="#" class="btn btn-dark rounded-pill py-3 px-5"> Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Ticket Packages End -->
-
-
-        <!-- Attractions Start -->
-        <div class="container-fluid attractions py-5">
-            <div class="container attractions-section py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Attractions</h4>
-                    <h1 class="display-5 text-white mb-4">Explore WaterLand Park Attractions</h1>
-                    <p class="text-white mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="img/attraction-1.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Roller Coaster</a>
-                    </div>
-                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="img/attraction-2.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Carousel</a>
-                    </div>
-                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="img/attraction-3.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Arcade Game</a>
-                    </div>
-                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
-                        <img src="img/attraction-4.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Hanging Carousel</a>
-                    </div>
-                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
-                        <img src="img/attraction-2.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Carousel</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Attractions End -->
-
-        <!-- Gallery Start -->
-        <div class="container-fluid gallery pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Gallery</h4>
-                    <h1 class="display-5 mb-4">Captured Moments In Waterland</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="gallery-item">
-                            <img src="img/gallery-1.jpg" class="img-fluid rounded w-100 h-100" alt="">
-                            <div class="search-icon">
-                                <a href="img/gallery-1.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="gallery-item">
-                            <img src="img/gallery-2.jpg" class="img-fluid rounded w-100 h-100" alt="">
-                            <div class="search-icon">
-                                <a href="img/gallery-2.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="gallery-item">
-                            <img src="img/gallery-3.jpg" class="img-fluid rounded w-100 h-100" alt="">
-                            <div class="search-icon">
-                                <a href="img/gallery-3.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="gallery-item">
-                            <img src="img/gallery-4.jpg" class="img-fluid rounded w-100 h-100" alt="">
-                            <div class="search-icon">
-                                <a href="img/gallery-4.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="gallery-item">
-                            <img src="img/gallery-5.jpg" class="img-fluid rounded w-100 h-100" alt="">
-                            <div class="search-icon">
-                                <a href="img/gallery-5.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-5"><i class="fas fa-search-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="gallery-item">
-                            <img src="img/gallery-6.jpg" class="img-fluid rounded w-100 h-100" alt="">
-                            <div class="search-icon">
-                                <a href="img/gallery-6.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-6"><i class="fas fa-search-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gallery End -->
-
-
-        <!-- Blog Start -->
-        <div class="container-fluid blog pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Blog</h4>
-                    <h1 class="display-5 mb-4">Latest Blog & Articles</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <a href="#">
-                                    <img src="img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                </a>
-                                <div class="blog-category py-2 px-4">Vacation</div>
-                                <div class="blog-date"><i class="fas fa-clock me-2"></i>August 19, 2025</div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <a href="#" class="h4 d-inline-block mb-4">Why Children Dont Like Getting Out Of The Water</a>
-                                <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem porro sapiente, neque a quibusdam....
-                                </p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <a href="#">
-                                    <img src="img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                </a>
-                                <div class="blog-category py-2 px-4">Insight</div>
-                                <div class="blog-date"><i class="fas fa-clock me-2"></i>August 19, 2025</div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <a href="#" class="h4 d-inline-block mb-4">5 Ways To Enjoy Waterland This Spring Break</a>
-                                <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem porro sapiente, neque a quibusdam....
-                                </p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <a href="#">
-                                    <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                                </a>
-                                <div class="blog-category py-2 px-4">Insight</div>
-                                <div class="blog-date"><i class="fas fa-clock me-2"></i>August 19, 2025</div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <a href="#" class="h4 d-inline-block mb-4">3 Tips for Your Family Spring Break at Amusement Park</a>
-                                <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem porro sapiente, neque a quibusdam....
-                                </p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
-
-
-        <!-- Team Start -->
-        <div class="container-fluid team pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Meet Our Team</h4>
-                    <h1 class="display-5 mb-4">Our Waterland Park Dedicated Team Member</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item p-4">
-                            <div class="team-content">
-                                <div class="d-flex justify-content-between border-bottom pb-4">
-                                    <div class="text-start">
-                                        <h4 class="mb-0">David James</h4>
-                                        <p class="mb-0">Profession</p>
-                                    </div>
-                                    <div>
-                                        <img src="img/team-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                    </div>
-                                </div>
-                                <div class="team-icon rounded-pill my-4 p-3">
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                                <p class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item p-4">
-                            <div class="team-content">
-                                <div class="d-flex justify-content-between border-bottom pb-4">
-                                    <div class="text-start">
-                                        <h4 class="mb-0">William John</h4>
-                                        <p class="mb-0">Profession</p>
-                                    </div>
-                                    <div>
-                                        <img src="img/team-2.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                    </div>
-                                </div>
-                                <div class="team-icon rounded-pill my-4 p-3">
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                                <p class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item p-4">
-                            <div class="team-content">
-                                <div class="d-flex justify-content-between border-bottom pb-4">
-                                    <div class="text-start">
-                                        <h4 class="mb-0">Michael John</h4>
-                                        <p class="mb-0">Profession</p>
-                                    </div>
-                                    <div>
-                                        <img src="img/team-3.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                    </div>
-                                </div>
-                                <div class="team-icon rounded-pill my-4 p-3">
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                                <p class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Testimonials</h4>
-                    <h1 class="display-5 text-white mb-4">Our Clients Riviews</h1>
-                    <p class="text-white mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="testimonial-item p-4">
-                        <p class="text-white fs-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos mollitia fugiat, nihil autem reprehenderit aperiam maxime minima consequatur, nam iste eius velit perferendis voluptatem at atque neque soluta reiciendis doloremque.
+    <!-- About Start -->
+    <div class="container-fluid about pb-5">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <!-- About Section -->
+                <div class="col-xl-5 d-flex align-items-center wow fadeInLeft" data-wow-delay="0.2s">
+                    <div>
+                        <h4 class="text-primary">About Our Company</h4>
+                        <h1 class="display-5 mb-4">Adventure Trip & Tour Services</h1>
+                        <p class="mb-4" style="text-align: justify;">
+                            Adventure Trip & Tour Services showcases the breathtaking beauty, vibrant culture, and
+                            rich
+                            heritage of Pakistan. Welcoming both national and international tourists, we pride
+                            ourselves
+                            on offering exceptional services and unforgettable experiences. Our engaging and lively
+                            activities are designed to captivate and inspire. We organize domestic and international
+                            tours for educational institutions, corporate teams, teachers, students, university
+                            groups,
+                            and individual travelers, ensuring each journey is filled with fun, discovery, and
+                            adventure.
                         </p>
-                        <div class="testimonial-inner">
-                            <div class="testimonial-img">
-                                <img src="img/testimonial-1.jpg" class="img-fluid" alt="Image">
-                                <div class="testimonial-quote btn-lg-square rounded-circle"><i class="fa fa-quote-right fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="ms-4">
-                                <h4>Person Name</h4>
-                                <p class="text-start text-white">Profession</p>
-                                <div class="d-flex text-primary">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star text-white"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item p-4">
-                        <p class="text-white fs-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos mollitia fugiat, nihil autem reprehenderit aperiam maxime minima consequatur, nam iste eius velit perferendis voluptatem at atque neque soluta reiciendis doloremque.
-                        </p>
-                        <div class="testimonial-inner">
-                            <div class="testimonial-img">
-                                <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image">
-                                <div class="testimonial-quote btn-lg-square rounded-circle"><i class="fa fa-quote-right fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="ms-4">
-                                <h4>Person Name</h4>
-                                <p class="text-start text-white">Profession</p>
-                                <div class="d-flex text-primary">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star text-white"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item p-4">
-                        <p class="text-white fs-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos mollitia fugiat, nihil autem reprehenderit aperiam maxime minima consequatur, nam iste eius velit perferendis voluptatem at atque neque soluta reiciendis doloremque.
-                        </p>
-                        <div class="testimonial-inner">
-                            <div class="testimonial-img">
-                                <img src="img/testimonial-3.jpg" class="img-fluid" alt="Image">
-                                <div class="testimonial-quote btn-lg-square rounded-circle"><i class="fa fa-quote-right fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="ms-4">
-                                <h4>Person Name</h4>
-                                <p class="text-start text-white">Profession</p>
-                                <div class="d-flex text-primary">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star text-white"></i>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-4">
-                        <div class="footer-item">
-                            <a href="index.html" class="p-0">
-                                <h4 class="text-white mb-4"><i class="fas fa-swimmer text-primary me-3"></i>WaterLand</h4>
-                                <!-- <img src="img/logo.png" alt="Logo"> -->
+                <div class="col-xl-7 d-flex align-items-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="image-grid">
+                        <div class="column">
+                            <a href="../About/about.html">
+                              <img src="img/pexels-shaheer-amaid-377139222-14822617.jpg" alt="Adventure Tour" class="large">
                             </a>
-                            <p class="mb-2">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">123 Street New York.USA</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-envelope text-primary me-3"></i>
-                                <p class="text-white mb-0">info@example.com</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fa fa-phone-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                            <a href="#">
+                              <img src="img/pexels-syed-hasan-mehdi-270838-815880.jpg" alt="Team Building" class="small">
+                            </a>
+                          </div>
+                          <div class="column">
+                            <a href="#">
+                              <img src="img/pexels-ashiq-ali-11436188-6182219.jpg" alt="Adventure Tour" class="small">
+                            </a>
+                            <a href="#" style="margin-top: 10px;">
+                              <img src="img/pexels-marina-zvada-844583049-25358203.jpg" alt="Cultural Tours" class="large">
+                            </a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Blog Start -->
+    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px; max-height: 130px;">
+        <h4 class="text-primary mt-5">Our Destinations</h4>
+        <h1 class="display-5 mb-4">Latest Destinations</h1>
+        <p class="mb-0">Explore the diverse landscapes and unique experiences offered by Adventure Trip & Tour
+            Services. From the majestic peaks of the Karakoram to the serene beauty of the northern valleys, our
+            tours encompass Pakistan's most captivating destinations. </p>
+    </div>
+    <div style="padding: 0px 70px;">
+        <section class="git">
+            <div class="carousel">
+                <div class="carousel__track" id="carousel-track">
+                    <div class="carousel__item carousel__item--left">
+                        <img src="https://images.pexels.com/photos/11416097/pexels-photo-11416097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="lahore">
+                        <span><i class="far fa-heart favorite-btn"></i></span>
+                        <div class="carousel__text">
+                          <h3 style="color: #fff;">Lahore</h3>
+                          <p>3 Days and 2 Nights</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__track">
+                    <div class="carousel__item carousel__item--main">
+                        <img src="https://thumbs.dreamstime.com/b/scenic-view-blue-water-kalam-valley-place-situated-swat-kpk-pak-known-its-natural-beauty-232786172.jpg" alt="Hunza">
+                        <span><i class="far fa-heart favorite-btn"></i></span>
+                        <div class="carousel__text">
+                          <h3 style="color: #fff;">Hunza</h3>
+                          <p>5 Days and 4 Nights</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="carousel__track">
+                    <div class="carousel__item ">
+                        <img src="https://images.pexels.com/photos/8729100/pexels-photo-8729100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thatta">
+                        <span><i class="far fa-heart favorite-btn"></i></span>
+                        <div class="carousel__text">
+                          <h3 style="color: #fff;">Thatta</h3>
+                          <p>3 Days and 2 Nights</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="carousel__track" id="carousel-track">
+                    <div class="carousel__item carousel__item--most-righ">
+                        <img src="https://i.pinimg.com/736x/4a/00/5c/4a005cd7ecad64fafcbc9b18a2b39575.jpg" alt="skardu">
+                        <span><i class="far fa-heart favorite-btn"></i></span>
+                        <div class="carousel__text">
+                          <h3 style="color: #fff;">Skardu</h3>
+                          <p>6 Days and 5 Nights</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="carousel__track">
+                    <div class="carousel__item ">
+                        <img src="https://i.pinimg.com/736x/1b/4d/b3/1b4db3ace2a77aa8c9a53ecab9db1c48.jpg" alt="murree">
+                        <span><i class="far fa-heart favorite-btn"></i></span>
+                        <div class="carousel__text">
+                          <h3 style="color: #fff;">Murree</h3>
+                          <p>3 Days and 2 Nights</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+    <!--Why Choose Us-->
+    <div class="container-fluid about pb-5">
+        <div class="container pb-5">
+            <div class="row g-5 overall">
+                <!-- About Section -->
+                <div class="col-xl-6 d-flex align-items-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div>
+                        <h4 class="text-primary">Why Book With Us</h4>
+                        <h1 class="display-5 mb-4">The Ultimate Travel Experience Awaits</h1>
+                        <p class="mb-5 text-justify" style="text-align: justify; margin-right: 25px;">Booking with us means choosing an exceptional travel experience tailored to your interests. We offer expert guides, and premium accommodations, ensuring seamless travel and memorable adventures. Our commitment to quality guarantees that every aspect of your journey will exceed expectations. Discover why we’re the top choice for travelers seeking both excitement and excellence. From breathtaking landscapes to immersive cultural encounters, we curate each itinerary with precision and care. Embark on a journey with us and create memories that will last a lifetime.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Section -->
+                <div class="col-xl-6 d-flex align-items-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="gallery" style="margin-left: 20px;">
+                        <div class="image-container">
+                            <img src="img/5.png" alt="first-img" class="flip">
+                            <span class="icon"><i class="fas fa-users fa-3x mb-4 initial"></i></span>
+                            <span class="hover-text">
+                                <i class="fas fa-users fa-3x mb-4"></i>
+                                <h2 class="text-white mb-3">4k+ Customers</h2>
+                                <p>Join a growing community of satisfied travelers who have experienced our
+                                    top-notch service and unforgettable tours.</p>
+                            </span>
+                        </div>
+                        <div class="image-container">
+                          <img src="img/6.png" alt="first-img" class="flip">
+                          <span class="icon"><i class="fas fa-hand-holding-usd fa-3x mb-4 initial"></i></span>
+                          <span class="hover-text">
+                            <i class="fas fa-hand-holding-usd fa-3x mb-4"></i>
+                            <h2 class="text-white mb-3">Secure Payment</h2>
+                            <p>Enjoy peace of mind with our secure payment system, and protect your financial
+                                information with smooth transactions.</p>
+                         </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="img/8.png" alt="first-img" class="flip">
+                            <span class="icon"><i class="fas fa-glass-cheers fa-3x mb-4 initial"></i></span>
+                            <span class="hover-text">
+                              <i class="fas fa-glass-cheers fa-3x mb-4"></i>
+                              <h2 class="text-white mb-3">Hospitality</h2>
+                              <p>Experience exceptional hospitality that makes you feel welcomed and valued
+                                throughout your journey with us.</p>
+                            </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="img/7.png" alt="first-img" class="flip">
+                            <span class="icon"><i class="fas fa-home fa-3x mb-4 initial"></i></span>
+                            <span class="hover-text">
+                              <i class="fas fa-home fa-3x mb-4"></i>
+                              <h2 class="text-white mb-3">Homely Atmosphere</h2>
+                              <p>Relax in an atmosphere where comfort and care are prioritized, making you feel
+                                right at home.</p>
+                            </span>
+                        </div>
+                      </div>
+                      <br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WHY CHOOSE US end -->
+    
+    <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="section-title mb-5" >
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px; max-height: 130px;">
+                <h4 class="text-primary mt-5">Testimonial</h4>
+                <h1 class="display-5 mb-4">What Our Customers Say!</h1>
+                <p class="mb-4" >Explore the diverse landscapes and unique experiences offered by Adventure Trip & Tour
+                    Services. From the majestic peaks of the Karakoram to the serene beauty of the northern valleys, our
+                    tours encompass Pakistan's most captivating destinations. </p>
+            </div>       
+         </div>
+        <div class="testimonials-boxes wow fadeInUp" data-wow-delay="0.2s" >
+            <div class="testimonial-box">
+                <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "Our trip to Hunza Valley was beyond amazing. The breathtaking landscapes, serene atmosphere, and friendly locals made it an unforgettable experience. The tour was well-organized and our guide was incredibly knowledgeable."
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/team-1.jpg" class="testimonial-img" alt="Hunza">
+                <h3>James Smith</h3>
+                <h4>Photographer</h4>
+            </div>
+
+            <div class="testimonial-box">
+                <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "Visiting Skardu was a dream come true. The majestic mountains, clear lakes, and warm hospitality were beyond our expectations. The itinerary was perfectly balanced between adventure and relaxation. Highly recommended!"
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/team-2.jpg" class="testimonial-img" alt="Skardu">
+                <h3>Emily Johnson</h3>
+                <h4>Travel Blogger</h4>
+            </div>
+
+            <div class="testimonial-box">
+                <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "The tour to Naran Kaghan was incredible. The lush greenery, sparkling rivers, and the cool, fresh air were rejuvenating. Our guide made sure we explored the best spots and shared fascinating stories about the area."
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/team-3.jpg" class="testimonial-img" alt="Naran Kaghan">
+                <h3>Michael Brown</h3>
+                <h4>Adventurer</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+    <!-- About Start
+    <div class="container-fluid about pb-5">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-4 custom-slide-up" data-wow-delay="0.2s">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <h4 class="text-primary mb-3">ABOUT OUR COMPANY</h4>
+                            <h1 class="display-6 mb-4">Adventure Trip & Tour Services</h1>
+                            <p class="mb-4" style="text-align: justify;">
+                                Adventure Trip & Tour Services showcases the breathtaking beauty, vibrant culture, and
+                                rich
+                                heritage of Pakistan. Welcoming both national and international tourists, we pride
+                                ourselves
+                                on offering exceptional services and unforgettable experiences. Our engaging and lively
+                                activities are designed to captivate and inspire. We organize domestic and international
+                                tours for educational institutions, corporate teams, teachers, students, university
+                                groups,
+                                and individual travelers, ensuring each journey is filled with fun, discovery, and
+                                adventure.
+                            </p>
+                            <div class="btn btn-primary interactive-btn">
+                                <h5 class="mb-0 text-white">To Travel is to Live</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-2">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Quick Links</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-2">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Support</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Opening Hours</h4>
-                            <div class="opening-date mb-3 pb-3">
-                                <div class="opening-clock flex-shrink-0">
-                                    <h6 class="text-white mb-0 me-auto">Monday - Friday:</h6>
-                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 11:00 AM - 16:00 PM</p>
-                                </div>
-                                <div class="opening-clock flex-shrink-0">
-                                    <h6 class="text-white mb-0 me-auto">Satur - Sunday:</h6>
-                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 09:00 AM - 17:00 PM</p>
-                                </div>
-                                <div class="opening-clock flex-shrink-0">
-                                    <h6 class="text-white mb-0 me-auto">Holiday:</h6>
-                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 09:00 AM - 17:00 PM</p>
+                </div>
+                <div class="col-lg-8 custom-slide-up" data-wow-delay="0.4s">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card image-card">
+                                <img src="img/tour.jpg" class="card-img-top" alt="Adventure Tour">
+                                <div class="card-body">
+                                    <h5 class="card-title">Explore Our Adventures</h5>
+                                    <p class="card-text">Discover more about our exciting tours and experiences.</p>
                                 </div>
                             </div>
-                            <div>
-                                <p class="text-white mb-2">Payment Accepted</p>
-                                <img src="img/payment.png" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card image-card">
+                                <img src="img/Adventure Activities.jpg" class="card-img-top" alt="Adventure Activities">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adventure Activities</h5>
+                                    <p class="card-text">Engage in thrilling and memorable activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card image-card">
+                                <img src="img/Cultural Tours.jfif" class="card-img-top" alt="Cultural Tours">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cultural Tours</h5>
+                                    <p class="card-text">Experience the rich culture and heritage of Pakistan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card image-card">
+                                <img src="img/Team Building.jpg" class="card-img-top" alt="Team Building">
+                                <div class="card-body">
+                                    <h5 class="card-title">Team Building</h5>
+                                    <p class="card-text">Strengthen bonds with our specially designed team activities.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+    </div>
+    About End -->
+
+    <!-- Why Choose Us
+    <div class="container-fluid service py-5">
+        <div class="container service-section py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 970px;">
+                <h4 class="text-primary mb-3">Why Book With Us</h4>
+                <h1 class="display-5 text-white mb-4">The Ultimate Travel Experience Awaits</h1>
+                <p class="mb-3 text-white">Booking with us means choosing an exceptional travel experience tailored to
+                    your interests. We offer expert guides, and premium accommodations, ensuring seamless travel and
+                    memorable adventures. Our commitment to quality guarantees that every aspect of your journey will
+                    exceed expectations. Discover why we’re the top choice for travelers seeking both excitement and
+                    excellence.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-panel">
+                        <div class="service-inner">
+                            <div class="service-front">
+                                <div class="icon">
+                                    <i class="fas fa-users fa-3x"></i>
+                                </div>
+                                <h4>4k+ Customers</h4>
+                            </div>
+                            <div class="service-back">
+                                <div class="icon">
+                                    <i class="fas fa-users fa-3x"></i>
+                                </div>
+                                <div class="text-content">
+                                    <h4>4k+ Customers</h4>
+                                    <p>Join a growing community of satisfied travelers who have experienced our
+                                        top-notch service and unforgettable tours.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-end text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-panel">
+                        <div class="service-inner">
+                            <div class="service-front">
+                                <div class="icon">
+                                    <i class="fas fa-hand-holding-usd fa-3x"></i>
+                                </div>
+                                <h4>Secure Payment</h4>
+                            </div>
+                            <div class="service-back">
+                                <div class="icon">
+                                    <i class="fas fa-hand-holding-usd fa-3x"></i>
+                                </div>
+                                <div class="text-content">
+                                    <h4>Secure Payment</h4>
+                                    <p>Enjoy peace of mind with our secure payment system, and protect your financial
+                                        information with smooth transactions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-panel">
+                        <div class="service-inner">
+                            <div class="service-front">
+                                <div class="icon">
+                                    <i class="fas fa-glass-cheers fa-3x"></i>
+                                </div>
+                                <h4>Hospitality</h4>
+                            </div>
+                            <div class="service-back">
+                                <div class="icon">
+                                    <i class="fas fa-glass-cheers fa-3x"></i>
+                                </div>
+                                <div class="text-content">
+                                    <h4>Hospitality</h4>
+                                    <p>Experience exceptional hospitality that makes you feel welcomed and valued
+                                        throughout your journey with us.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-panel">
+                        <div class="service-inner">
+                            <div class="service-front">
+                                <div class="icon">
+                                    <i class="fas fa-home fa-3x"></i>
+                                </div>
+                                <h4>Homely Atmosphere</h4>
+                            </div>
+                            <div class="service-back">
+                                <div class="icon">
+                                    <i class="fas fa-home fa-3x"></i>
+                                </div>
+                                <div class="text-content">
+                                    <h4>Homely Atmosphere</h4>
+                                    <p>Relax in an atmosphere where comfort and care are prioritized, making you feel
+                                        right at home.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+    </div>
+     Why Choose Us End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-        
+    <!-- Blog Start 
+    <div class="container-fluid blog pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary mt-5">Our Destinations</h4>
+                <h1 class="display-5 mb-4">Latest Destinations</h1>
+                <p class="mb-0">Explore the diverse landscapes and unique experiences offered by Adventure Trip & Tour
+                    Services. From the majestic peaks of the Karakoram to the serene beauty of the northern valleys, our
+                    tours encompass Pakistan's most captivating destinations. </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img src="https://adventuretriptourservices.com/wp-content/uploads/2023/03/Hunza.jpg"
+                                    class="img-fluid w-100 rounded-top" alt="Image">
+                            </a>
+                        </div>
+                        <div class="blog-content p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Hunza Tours
+                            </a>
+                            <p class="mb-4">Hunza valley is a mountainous valley in the Gilgit–Baltistan. Hunza is
+                                situated in the extreme northern part of Pakistan which connects China with Pakistan.
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img src="https://adventuretriptourservices.com/wp-content/uploads/2023/03/Kashmir-Tour.jpg"
+                                    class="img-fluid w-100 rounded-top" alt="Image">
+                            </a>
+                        </div>
+                        <div class="blog-content p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Kashmir Tours</a>
+                            <p class="mb-4">Neelum Valley is situated to the North of Muzaffarabad. Running parallel to
+                                the Kaghan Valley separated by snow covered peaks.
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img src="https://adventuretriptourservices.com/wp-content/uploads/2023/03/Skardu-Tour.jpg"
+                                    class="img-fluid w-100 rounded-top" alt="Image">
+                            </a>
+                        </div>
+                        <div class="blog-content p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Skardu Tours
+                                Park</a>
+                            <p class="mb-4">Skardu is a major tourism & tracking hub in Gilgit-Baltistan. The
+                                mountainous terrain of the region, including four of the world’s 14 Eight-thousand
+                                peaks.
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     Blog End -->
+
+
+    <!-- Testimonial Start 
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
+                <h1 class="display-5 mb-5">What Our Customers Say!</h1>
+            </div>
+            <div class="owl-carousel owl-theme testimonial-carousel mb-4 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-2 wow bounceInUp"
+                data-wow-delay="0.3s">
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px;">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Person Name</h4>
+                            <p class="m-0">Profession</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/><br/>
+    Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-4 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-4">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="home.html" class="p-0">
+                            <img src="img/Adventure-tour-and-travels-Logo-white-1024x212.png" class="pb-3" width="70%"
+                                alt="Logo">
+                        </a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3 mb-3"></i>
+                            <p class="text-white mb-2 mt-4">Gulistan Colony near SE college, <br>Bahawalpur, Pakistan
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3 mb-2"></i>
+                            <p class="text-white mb-2">shaziakhan0100@gmail.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3 mb-2"></i>
+                            <p class="text-white mb-2">(+92) 302-7809400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item"><br>
+                        <h4 class="text-white mb-3">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Home</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Destination</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Blog</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Testimonial</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>About</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item"><br>
+                        <h4 class="text-white mb-4">Connect with Us</h4>
+                        <div class="social-media mb-2 pb-2">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f text-primary me-3"
+                                    style="font-size: 24px;"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram text-primary mx-3"
+                                    style="font-size: 24px;"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin-in text-primary mx-3"
+                                    style="font-size: 24px;"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-youtube text-primary mx-3"
+                                    style="font-size: 24px;"></i></a>
+                        </div><br>
+                        <div>
+                            <p class="text-white mb-3">Payment Accepted</p>
+                            <img src="img/payment.png" class="img-fluid" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Adventure Trip & Tour Services</a>, All
+                        right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    Designed By <a class="border-bottom text-white" href="https://inovamsolutions.com/">Inovam
+                        Solutions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -917,10 +882,11 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    
+
 
     <!-- Template Javascript -->
-    <script src="js/home.js"></script>
-    </body>
+    <script src="js/destination.js"></script>
+    <script src="js/about.js"></script>
+</body>
 
 </html>
