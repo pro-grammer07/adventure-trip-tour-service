@@ -67,13 +67,13 @@
 }
 
 .text-primary{
-    color:#00a566 !important;
+    color:#008080 !important;
 }
 
 .btn.btn-primary {
     color: var(--bs-white);
     border: none;
-    background-color: #00b36e;
+    background-color:#008080;
 }
 
 .btn.btn-primary:hover {
@@ -137,25 +137,25 @@
   }
   
   .nav-bar.scrolled {
-    background-color: #00b36e;
+    background-color: #008080;
     opacity: 0.99;
   }
 
   /* Default button styles */
 .btn.top {
-    background-color: #3bd399; /* Original button background color */
+    background-color: #008080; /* Original button background color */
     color: #fff; /* Original button text color */
 }
 
 /* Button styles when .nav-bar.scrolled is active */
 .nav-bar.scrolled .btn.top {
     background-color: #fff; /* Background color matching .nav-bar.scrolled */
-    color: #00b36e;}
+    color: #008080;}
 
 /* Optional: Add a hover effect to maintain visibility */
 .nav-bar.scrolled .btn.top:hover {
     background-color: #fff; /* Background color matching .nav-bar.scrolled */
-    color: #00b36e;}   
+    color: #008080;}   
 
 
 
