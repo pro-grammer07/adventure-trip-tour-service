@@ -1,8 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <>
+    <Header />
+    <Hero />
       <div>
         <div className="container-fluid about pb-5">
           <div className="container pb-5">
