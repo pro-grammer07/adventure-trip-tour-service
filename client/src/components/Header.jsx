@@ -4,12 +4,10 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel";
 import "../App.css";
 
-
 const Header = () => {
   useEffect(() => {
-    // Ensure DOM is ready
-    $(document).ready(function () {
-      // Initialize Owl Carousel
+    // Function to initialize carousels
+    const initCarousels = () => {
       $(".header-carousel").owlCarousel({
         items: 1,
         dots: false,
@@ -31,24 +29,12 @@ const Header = () => {
         ],
         responsiveClass: true,
         responsive: {
-          0: {
-            items: 1,
-          },
-          576: {
-            items: 2,
-          },
-          768: {
-            items: 2,
-          },
-          992: {
-            items: 3,
-          },
-          1200: {
-            items: 4,
-          },
-          1400: {
-            items: 4,
-          },
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 2 },
+          992: { items: 3 },
+          1200: { items: 4 },
+          1400: { items: 4 },
         },
       });
 
@@ -66,26 +52,25 @@ const Header = () => {
         ],
         responsiveClass: true,
         responsive: {
-          0: {
-            items: 1,
-          },
-          576: {
-            items: 1,
-          },
-          768: {
-            items: 1,
-          },
-          992: {
-            items: 1,
-          },
-          1200: {
-            items: 1,
-          },
+          0: { items: 1 },
+          576: { items: 1 },
+          768: { items: 1 },
+          992: { items: 1 },
+          1200: { items: 1 },
         },
       });
-    });
-  }, []);
+    };
 
+    // Initialize carousels after the component has mounted
+    $(document).ready(initCarousels);
+
+    // Optional cleanup: This prevents errors if the component unmounts
+    return () => {
+      $(".header-carousel").trigger("destroy.owl.carousel");
+      $(".attractions-carousel").trigger("destroy.owl.carousel");
+      $(".testimonial-carousel").trigger("destroy.owl.carousel");
+    };
+  }, []);
 
   return (
     <div>
@@ -141,9 +126,6 @@ const Header = () => {
           </div>
         </nav>
       </div>
-
-      {/* HERO SECTION  */}
-   
     </div>
   );
 };
