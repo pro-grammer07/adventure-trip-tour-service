@@ -1636,6 +1636,7 @@
     background-color: var(--bs-primary); /* Use the primary color */
     width: 50px; /* Adjust the size as needed */
     height: 50px; /* Adjust the size as needed */
+    border-radius: 100%;
 }
 
 /* Position the carousel controls above the testimonial div */
