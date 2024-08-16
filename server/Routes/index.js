@@ -7,7 +7,14 @@ import {
   createDestination,
   getAllDestinations,
 } from "../Controllers/destinationController.js";
-// import {createTestimonial}
+import {
+  createForeign,
+  getAllForeigns,
+} from "../Controllers/foreignController.js";
+import {
+  createTestimonial,
+  getAllTestimonials,
+} from "../Controllers/testimonialController.js";
 
 const router = express.Router();
 
