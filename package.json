@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "create-react-app": "^5.0.1",
+    "wowjs": "^1.1.3"
   }
 }
