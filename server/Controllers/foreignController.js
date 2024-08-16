@@ -27,7 +27,7 @@ export const createForeign = async (req, res, next) => {
   }
 };
 
-export const getAllForeign = async (req, res, next) => {
+export const getAllForeigns = async (req, res, next) => {
   try {
     const foreign = await Foreign.find();
     console.log(post);
