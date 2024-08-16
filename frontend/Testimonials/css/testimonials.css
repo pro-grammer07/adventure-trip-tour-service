@@ -921,6 +921,50 @@
 }
 
 /*** Testimonial End ***/
+    .parallax-bg {
+        background-image: url('../img/pexels-panther0911-10102609.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+    }
+
+    .typewriter-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 5s linear 1s 1 normal both;
+}
+
+.delay-1 {
+    animation-delay: 6s;
+}
+
+.delay-2 {
+    animation-delay: 12s;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+
 
 
 
@@ -1509,17 +1553,20 @@
 .testimonials .testimonials-boxes {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
+}
+.testimonial-box {
+    height: 400px;
 }
 
 .testimonials .testimonial-box {
     background: #fafafc;
-    border-radius: 6px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 10px;
     box-sizing: border-box;
     flex: 1 1 calc(33.333% - 20px);
-    min-width: 300px;
+    min-width: 250px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
@@ -1541,7 +1588,7 @@
 
 .testimonials .testimonial-box .quote-icon-left,
 .testimonials .testimonial-box .quote-icon-right {
-    color: var(--primary-color);
+    color: var(--bs-primary);
     font-size: 26px;
 }
 
@@ -1563,7 +1610,7 @@
     margin: -40px 0 0 0;
     position: relative;
     z-index: 2;
-    border: 6px solid #fff;
+    border: 6px solid var(--bs-primary);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1582,4 +1629,27 @@
     color: #999;
     margin: 0;
     text-align: center;
+}
+/* Change the color of the carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--bs-primary); /* Use the primary color */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 100%;
+}
+
+/* Position the carousel controls above the testimonial div */
+.carousel-control-prev,
+.carousel-control-next {
+    top: -50px; /* Move the controls above the testimonial section */
+}
+
+/* Additional customization for better visibility and alignment */
+.carousel-control-prev {
+    left: -70px;
+}
+
+.carousel-control-next {
+    right: -70px;
 }

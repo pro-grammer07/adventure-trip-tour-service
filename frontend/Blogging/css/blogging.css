@@ -1,0 +1,511 @@
+:root {
+    --pri: #008080;
+}
+/*** Spinner Start ***/
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+/*** Spinner End ***/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-xl-square {
+    width: 66px;
+    height: 66px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square,
+.btn-xl-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.text-primary{
+    color:#008080 !important;
+}
+
+.btn.btn-primary {
+    color: var(--bs-white);
+    border: none;
+    background-color:#008080;
+}
+
+.btn.btn-primary:hover {
+    background: var(--bs-dark);
+}
+
+.btn.btn-light {
+    color: var(--bs-primary);
+    border: none;
+}
+
+.btn.btn-light:hover {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+.btn.btn-dark {
+    color: var(--bs-white);
+    border: none;
+}
+
+.btn.btn-dark:hover {
+    color: var(--bs-primary);
+    background: var(--bs-light);
+}
+
+/*** Navbar Start ***/
+.nav-bar {
+    position: fixed;
+    background: transparent;
+    transition: background-color 0.5s;
+  }
+  
+  .sticky-top {
+    position: fixed;
+    height: 80px;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    position: relative;
+    margin-right: 30px;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+  }
+  
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #ffffff; 
+    font-weight: 30px;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255, 0.3); 
+    position: relative;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover::after,
+  .navbar-light .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 20%; /* Start from near the middle */
+    bottom: 1rem; /* Adjust the gap between text and underline */
+    width: 60%; /* Cover most of the text */
+    height: 2px; /* Thickness of the underline */
+    background: #ffffff; /* Underline color */
+    transition: width 0.1s ease, left 0.1s ease;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Extend to full width on hover */
+    left: 0; /* Start from the beginning on hover */
+  }
+  
+  
+  .navbar-light .navbar-brand img {
+    max-height: 45px;
+    transition: .5s;
+    margin-bottom: 5px;
+  }
+  
+  .nav-bar.scrolled {
+    background-color: #008080;
+    opacity: 0.99;
+  }
+
+  /* Default button styles */
+.btn.top {
+    background-color: #008080; /* Original button background color */
+    color: #fff; /* Original button text color */
+}
+
+/* Button styles when .nav-bar.scrolled is active */
+.nav-bar.scrolled .btn.top {
+    background-color: #fff; /* Background color matching .nav-bar.scrolled */
+    color: #008080;}
+
+/* Optional: Add a hover effect to maintain visibility */
+.nav-bar.scrolled .btn.top:hover {
+    background-color: #fff; /* Background color matching .nav-bar.scrolled */
+    color: #008080;}   
+
+
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 8px !important;
+    transition: .5s;
+    opacity: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar.navbar-expand-lg .navbar-toggler {
+        padding: 8px 15px;
+        border: 1px solid var(--bs-primary);
+        color: var(--bs-primary);
+    }
+
+    .sticky-top .navbar-light .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+}
+/*** Navbar End ***/
+
+/*** Carousel Hero Header Start ***/
+
+.header-carousel {
+    max-height: 90vh; /* Set the maximum height of the carousel */
+    overflow: hidden; /* Add this line to hide any overflowing content */
+}
+.header-carousel .header-carousel-item img {
+    object-fit: cover;
+}
+
+
+@media (min-width: 1200px) {
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+        height: 700px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+        height: 1200px;
+    }
+}
+
+.header-carousel .owl-nav .owl-prev {
+    display: none;
+}
+
+.header-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    right: 50%;
+    transform: translateY(-50%);
+    margin-right: -60px;
+    border-radius: 60px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.header-carousel .owl-nav .owl-next:hover {
+    box-shadow: inset 0 0 100px 0 var(--bs-light);
+    color: var(--bs-primary);
+}
+
+.header-carousel .owl-nav .owl-next i {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: carousel-next-btn;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
+@keyframes carousel-next-btn {
+    0%  {margin-top: 35%;}
+    50%  {margin-bottom: 70%;}
+    100% {margin-top: 35%;}
+}
+
+.header-carousel .header-carousel-item .carousel-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .05);
+    display: flex;
+    align-items: center;
+}
+
+.carousel-caption .ticket-form {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.header-carousel .header-carousel-item img {
+    animation-name: image-zoom;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s;
+}
+.video-zoom {
+    animation-name: zoom-in;
+    animation-duration: 10s; /* adjust the duration as needed */
+    animation-delay: 1s; /* adjust the delay as needed */
+    animation-iteration-count: infinite; /* or a specific number of iterations */
+    animation-direction: normal; /* or normal, reverse, etc. */
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/*** Carousel Hero Header End ***/
+
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/carousel-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+.bg-breadcrumb .breadcrumb {
+    position: relative;
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+}
+/*** Single Page Hero Header End ***/
+
+
+
+
+/*** Footer Start ***/
+.footer {
+    background: var(--bs-dark);
+}
+
+.footer .footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-item a {
+    line-height: 35px;
+    color: var(--bs-body);
+    transition: 0.5s;
+}
+
+.footer .footer-item p {
+    line-height: 35px;
+}
+
+.footer .footer-item a:hover {
+    color: var(--bs-primary);
+}
+
+.footer .footer-item .footer-btn a,
+.footer .footer-item .footer-btn a i {
+    transition: 0.5s;
+}
+
+.footer .footer-item .footer-btn a:hover {
+    background: var(--bs-white);
+}
+
+.footer .footer-item .footer-btn a:hover i {
+    color: var(--bs-primary);
+}
+
+.footer .footer-item .opening-date {
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.footer .footer-item .opening-date .opening-clock {
+    display: flex;
+    align-items: center;
+    line-height: 15px;
+}
+/*** Footer End ***/
+
+/*** copyright Start ***/
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bs-dark);
+}
+/*** copyright end ***/
+
+ul li{
+    text-align: left;
+}
+/* Blog Section Styling */
+.blog-section {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.blog-section p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.blog-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    gap: 20px;
+}
+
+.blog-col {
+    flex: 1 1 45%;
+    max-width: 45%;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-col:hover {
+    transform: scale(1.02);
+}
+
+.blog-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   
+}
+
+.blog-image {
+    width: 100%;
+    height: 400px; /* Set a fixed height for the image container */
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+    border-radius: 8px;
+}
+
+
+.blog-description {
+    font-size: 16px;
+    color: #666;
+    margin: 15px 0;
+}
+
+.read-more {
+    color: var(--pri);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Blog Intro Section */
+.blog-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Links Section */
+.links a {
+    display: block;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.btn-primary-gradient {
+    background: linear-gradient(90deg, #0066ff, #00ccff);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary-gradient:hover {
+    background: linear-gradient(90deg, #00ccff, #0066ff);
+}
