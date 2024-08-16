@@ -1,7 +1,8 @@
-import Testimonial from "../models/Testimonial.js";
+import Testimonial from "../Models/testimonialModel";
+
 export const createTestimonial = async (req, res, next) => {
   try {
-    const { image, location, description } = req.body;
+    const { name, image, profession, description } = req.body;
 
     if (!description) {
       next("You must provide description");
@@ -9,8 +10,9 @@ export const createTestimonial = async (req, res, next) => {
     }
 
     const testimonial = await Testimonial.create({
+      name,
       image,
-      location,
+      profession,
       description,
     });
 

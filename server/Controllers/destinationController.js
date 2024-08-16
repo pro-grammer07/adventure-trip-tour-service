@@ -2,7 +2,7 @@ import Destination from "../Models/destinationModel.js";
 
 export const createDestination = async (req, res, next) => {
   try {
-    const { image, location, description } = req.body;
+    const { image, location, days, availability, description } = req.body;
 
     if (!description) {
       next("You must provide description");
@@ -12,6 +12,8 @@ export const createDestination = async (req, res, next) => {
     const destination = await Destination.create({
       image,
       location,
+      days, 
+      availability,
       description,
     });
 

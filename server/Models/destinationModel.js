@@ -10,9 +10,17 @@ const destinationSchema = new mongoose.Schema(
       type: String,
       required: [true, "Project Title is required:"],
     },
+    days: {
+      type: String,
+      required: [true, "Package is required:"],
+    },
+    availability: {
+      type: String,
+      required: [true, "Availability is required:"],
+    },
     description: {
       type: String,
-      required: [true, "Name is required"],
+      // required: [true, "Name is required"],
     },
   },
   { timestamps: true }
