@@ -124,11 +124,32 @@
     outline: none;
     transition: .5s;
   }
-  
+
   .navbar-light .navbar-nav .nav-link:hover,
   .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: #ffffff; 
+    font-weight: 30px;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255, 0.3); 
+    position: relative;
   }
+  
+  .navbar-light .navbar-nav .nav-link:hover::after,
+  .navbar-light .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 20%; /* Start from near the middle */
+    bottom: 1rem; /* Adjust the gap between text and underline */
+    width: 60%; /* Cover most of the text */
+    height: 2px; /* Thickness of the underline */
+    background: #ffffff; /* Underline color */
+    transition: width 0.1s ease, left 0.1s ease;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Extend to full width on hover */
+    left: 0; /* Start from the beginning on hover */
+  }
+  
   
   .navbar-light .navbar-brand img {
     max-height: 45px;
@@ -141,9 +162,33 @@
     opacity: 0.99;
   }
 
+  .nav-bar.scrolled .navbar-nav .nav-link.active,
+  .nav-bar.scrolled .navbar-nav .nav-link:hover {
+    color: #ffffff; 
+    font-weight: 20px;
+    position: relative;
+  }
+  .nav-bar.scrolled .navbar-nav .nav-link.active::after,
+  .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+    color: #ffffff;
+    content: '';
+    position: absolute;
+    left: 20%; /* Start from near the middle */
+    bottom: 1rem; /* Adjust the gap between text and underline */
+    width: 60%; /* Cover most of the text */
+    height: 2px; /* Thickness of the underline */
+    background: #ffffff; /* Underline color */
+    transition: width 0.1s ease, left 0.1s ease;
+  }
+  
+  .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Extend to full width on hover */
+    left: 0; /* Start from the beginning on hover */ 
+  }
+
   /* Default button styles */
 .btn.top {
-    background-color: #008080; /* Original button background color */
+    background-color: #02adad; /* Original button background color */
     color: #fff; /* Original button text color */
 }
 
@@ -474,7 +519,7 @@
 
 /*** About Start ***/
 .about {
-    margin-top: 6rem;
+    margin-top: -5rem;
 }
 
 .about .row {
