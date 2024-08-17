@@ -32,7 +32,7 @@ export const createDestination = async (req, res, next) => {
 export const getAllDestinations = async (req, res, next) => {
   try {
     const destination = await Destination.find();
-    console.log(post);
+    console.log(destination);
     res.status(200).json({
       success: true,
       message: "successfully",

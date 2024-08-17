@@ -12,7 +12,7 @@ export const createContact = async (req, res, next) => {
   try {
     const contact = await Contact.create({
       name,
-      phone,
+      // phone,
       email,
       message,
     });

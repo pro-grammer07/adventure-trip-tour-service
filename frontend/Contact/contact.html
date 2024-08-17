@@ -108,14 +108,14 @@
                     </div>
                     <div class="col-md-6 col-lg-7">
                         <p class="mb-4">Have a question or need assistance? Feel free to reach out! </p>
-                        <form>
-                            <input type="text" class="w-100 form-control p-3 mb-4 border-primary bg-light"
+                        <form id="contactForm" onsubmit="submitForm(event)" method="post">
+                            <input type="text" id="name" name="name" class="w-100 form-control p-3 mb-4 border-primary bg-light"
                                 placeholder="Your Name">
-                            <input type="email" class="w-100 form-control p-3 mb-4 border-primary bg-light"
+                            <input type="email" id="email" name="email" class="w-100 form-control p-3 mb-4 border-primary bg-light"
                                 placeholder="Enter Your Email">
-                            <textarea class="w-100 form-control mb-4 p-3 border-primary bg-light" rows="5" cols="10"
+                            <textarea id="message" name="message" class="w-100 form-control mb-4 p-3 border-primary bg-light" rows="5" cols="10"
                                 placeholder="Your Message"></textarea>
-                            <button class=" w-100 btn btn-primary rounded-pill text-white py-3 px-3"
+                            <button id="submit" class=" w-100 btn btn-primary rounded-pill text-white py-3 px-3"
                                 type="submit">Submit Now</button>
                         </form>
                     </div>
@@ -321,6 +321,7 @@
 
     <!-- Template Javascript -->
     <script src="js/contact.js"></script>
+    <script src="js/contactForm.js"></script>
     <script src="js/about.js"></script>
 </body>
 

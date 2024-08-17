@@ -27,8 +27,8 @@ router.post("/createDestination", createDestination);
 router.get("/getDestinations", getAllDestinations);
 
 // international tour routes
-router.post("/createDestination", createForeign);
-router.get("/getDestinations", getAllForeigns);
+router.post("/createForeign", createForeign);
+router.get("/getForeigns", getAllForeigns);
 
 // testimonial routes
 router.post("/createTestimonial", createTestimonial);
