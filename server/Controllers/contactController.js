@@ -2,16 +2,16 @@ import { sendContactEmail } from "../utils/index.js";
 import Contact from "../Models/contactModel.js";
 
 export const createContact = async (req, res, next) => {
-  const { cname, phone, email, message } = req.body;
+  const { name, phone, email, message } = req.body;
 
-  if (!(cname && phone && email && message)) {
+  if (!(name && phone && email && message)) {
     next("Provide required fields");
     return;
   }
 
   try {
     const contact = await Contact.create({
-      cname,
+      name,
       phone,
       email,
       message,

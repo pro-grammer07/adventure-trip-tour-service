@@ -18,6 +18,10 @@ const destinationSchema = new mongoose.Schema(
       type: String,
       required: [true, "Availability is required:"],
     },
+    price : {
+      type: Number,
+      required: [true, "Price is required:"],
+    },
     description: {
       type: String,
       // required: [true, "Name is required"],

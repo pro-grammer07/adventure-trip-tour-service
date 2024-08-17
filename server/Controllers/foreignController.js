@@ -2,7 +2,7 @@ import Foreign from "../Models/foreignModel.js";
 
 export const createForeign = async (req, res, next) => {
   try {
-    const { image, location, days, description } = req.body;
+    const { image, location, days, price, description } = req.body;
 
     if (!description) {
       next("You must provide description");
@@ -13,6 +13,7 @@ export const createForeign = async (req, res, next) => {
       image,
       location,
       days, 
+      price, 
       description,
     });
 
