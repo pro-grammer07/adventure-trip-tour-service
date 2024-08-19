@@ -6,12 +6,12 @@ const testimonialSchema = new mongoose.Schema(
       type: String,
       required: [true, "Name is required"],
     },
-    email: {
-      type: email,
-      required: [true, "Email is required"],
+    image: {
+      type: String,
+      required: [true, "Image is required"],
     },
-    rating: {
-      type: Number,
+    profession: {
+      type: String,
       required: [true, "Rating is required"],
     },
     review: {
