@@ -1,11 +1,10 @@
-import Testimonial from "../Models/testimonialModel";
-
+import Testimonial from "../Models/testimonialModel.js";
 export const createTestimonial = async (req, res, next) => {
   try {
-    const { name, image, profession, description } = req.body;
+    const { name, image, profession, review } = req.body;
 
-    if (!description) {
-      next("You must provide description");
+    if (!review) {
+      next("You must provide review");
       return;
     }
 
@@ -13,7 +12,7 @@ export const createTestimonial = async (req, res, next) => {
       name,
       image,
       profession,
-      description,
+      review,
     });
 
     res.status(200).json({
@@ -30,7 +29,7 @@ export const createTestimonial = async (req, res, next) => {
 export const getAllTestimonials = async (req, res, next) => {
   try {
     const testimonial = await Testimonial.find();
-    console.log(post);
+    console.log(testimonial);
     res.status(200).json({
       success: true,
       message: "successfully",

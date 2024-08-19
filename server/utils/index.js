@@ -20,13 +20,13 @@ export const sendContactEmail = async (customer, res) => {
   const mailOptions = {
     from: AUTH_EMAIL,
     to: recEmail,
-    subject: "DrPaint: New Customer Alert",
+    subject: "AdventureTourTrip: New Customer Alert",
 
     html: `<pre>Congratulations! You received a message from Customer. Don't keep them waiting... 
         The details are as follows:</pre>
         <br>
                 <h1>Customer Info:</h1>
-                <h2>Name: ${customer.cname}</h2>
+                <h2>Name: ${customer.name}</h2>
                 <h3>Phone: ${customer.phone}</h3>
                 <h3>Email: ${customer.email}</h3>
                 <p>Message: "${customer.message}"</p>`,

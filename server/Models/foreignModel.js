@@ -14,9 +14,13 @@ const foreignSchema = new mongoose.Schema(
       type: String,
       required: [true, "Package is required:"],
     },
+    price : {
+      type: Number,
+      required: [true, "Price is required:"],
+    },
     description: {
       type: String,
-      required: [true, "Name is required"],
+      // required: [true, "Description is required"],
     },
   },
   { timestamps: true }

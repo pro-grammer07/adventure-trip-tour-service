@@ -7,7 +7,14 @@ import {
   createDestination,
   getAllDestinations,
 } from "../Controllers/destinationController.js";
-// import {createTestimonial}
+import {
+  createForeign,
+  getAllForeigns,
+} from "../Controllers/foreignController.js";
+import {
+  createTestimonial,
+  getAllTestimonials,
+} from "../Controllers/testimonialController.js";
 
 const router = express.Router();
 
@@ -20,8 +27,8 @@ router.post("/createDestination", createDestination);
 router.get("/getDestinations", getAllDestinations);
 
 // international tour routes
-router.post("/createDestination", createForeign);
-router.get("/getDestinations", getAllForeigns);
+router.post("/createForeign", createForeign);
+router.get("/getForeigns", getAllForeigns);
 
 // testimonial routes
 router.post("/createTestimonial", createTestimonial);
