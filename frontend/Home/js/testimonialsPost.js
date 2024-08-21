@@ -3,7 +3,8 @@ async function getTestimonials() {
         const response = await fetch("http://localhost:8800/getTestimonials");
         const testimonialRes = await response.json();
   
-        const testimonials = testimonialRes.data;
+        
+        const testimonials = (testimonialRes.data).slice(0, 3); // Limit to 3 testimonials
 
         console.log(testimonials);
         const testimonialsContainer = document.querySelector(".testimonials-boxes");
