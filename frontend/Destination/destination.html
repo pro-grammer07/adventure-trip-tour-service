@@ -1,119 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Adventure Trip & Tour Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content name="keywords" />
+    <meta content name="description" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Adventure Trip & Tour Services</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content name="keywords" />
-  <meta content name="description" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
-    rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Icon Font Stylesheet -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-  <!-- Libraries Stylesheet -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/destination.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Stylesheet -->
-  <link href="css/destination.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- Spinner Start -->
-  <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-  <!-- Spinner End -->
-
-  <!-- Navbar & Hero Start -->
-  <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a href class="navbar-brand p-0">
-        <img src="img/Adventure-tour-and-travels-Logo-white-1024x212.png" alt="Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="fa fa-bars"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto py-0">
-          <a href="../Home/home.html" class="nav-item nav-link">Home</a>
-          <a href="../Destination/destination.html" class="nav-item nav-link active">Destination</a>
-          <a href="../Blog/blog.html" class="nav-item nav-link">Blog</a>
-          <a href="../Testimonials/testimonials.html" class="nav-item nav-link">Testimonial</a>
-          <a href="../About/about.html" class="nav-item nav-link">About</a>
-          <a href="../Contact/contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <a href="../Contact/contact.html" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0 top">Get
-          Started</a>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
       </div>
-    </nav>
-  </div>
-  <!-- Navbar & Hero End -->
+    </div>
+    <!-- Spinner End -->
 
-  <!-- Carousel Start -->
-<div class="header-carousel owl-carousel mb-5 pb-5">
-  <div class="header-carousel-item mb-5">
-    <img src="img/pexels-panther0911-10102609.jpg" style="filter: brightness(0.9)" />
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-      <div class="container align-items-center py-4">
-        <div class="row g-5 align-items-center">
-          <div class="col-xl-12 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" data-wow-delay="0.9s"
-            style="animation-delay: 1s">
-            <div class="text-center">
-              <h4 class="text-uppercase fw-bold mb-4" style="
-                    color: #008080;
-                    text-shadow: 0.7px 0.5px 0px rgba(255, 255, 255, 0.932);
-                  ">
-                Discover a World of Adventure
-              </h4>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href class="navbar-brand p-0">
+          <img
+            src="img/Adventure-tour-and-travels-Logo-white-1024x212.png"
+            alt="Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto py-0">
+            <a href="../Home/home.html" class="nav-item nav-link">Home</a>
+            <a
+              href="../Destination/destination.html"
+              class="nav-item nav-link active"
+              >Destination</a
+            >
+            <a href="../Blog/blog.html" class="nav-item nav-link">Blog</a>
+            <a
+              href="../Testimonials/testimonials.html"
+              class="nav-item nav-link"
+              >Testimonial</a
+            >
+            <a href="../About/about.html" class="nav-item nav-link">About</a>
+            <a href="../Contact/contact.html" class="nav-item nav-link"
+              >Contact</a
+            >
+          </div>
+          <a
+            href="../Contact/contact.html"
+            class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0 top"
+            >Get Started</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar & Hero End -->
 
-              <h1 class="display-4 text-uppercase text-white mb-4">
-                Destinations
-              </h1>
-              <p class="mb-4 fs-5">
-                Discover from the heart of your homeland to the farthest corners of the globe.
-              </p>
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel mb-5 pb-5">
+      <div class="header-carousel-item mb-5">
+        <img
+          src="img/pexels-panther0911-10102609.jpg"
+          style="filter: brightness(0.5)"
+        />
+        <div
+          class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="container align-items-center py-4">
+            <div class="row g-5 align-items-center">
+              <div
+                class="col-xl-12 fadeInLeft animated"
+                data-animation="fadeInLeft"
+                data-delay="1s"
+                data-wow-delay="0.9s"
+                style="animation-delay: 1s"
+              >
+                <div class="text-center">
+                  <h4
+                    class="text-uppercase fw-bold mb-5"
+                    style="
+                      color: #008080;
+                      text-shadow: 0.7px 0.5px 0px rgba(255, 255, 255, 0.932);
+                    "
+                  >
+                    Discover a World of Adventure
+                  </h4>
+
+                  <h1 class="display-4 text-uppercase text-white mb-5">
+                    Destinations
+                  </h1>
+                  <p class="mb-5 fs-5">
+                    Discover from the heart of your
+                    homeland to the farthest corners of the globe.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Carousel End -->
+    <br /><br />
+    <!-- Carousel End -->
 
-
-  <!--National TOurs-->
-  <div class="container-fluid mb-5">
-    <div class="text-center mx-auto wow fadeInUp mb-5 pb-3" data-wow-delay="0.2s"
-      style="max-width: 800px; max-height: 130px">
-      <h4 class="text-primary mt-5">Explore Your Homeland</h4>
-      <h1 class="display-5 mb-4">National Tours</h1>
-      <p class="mb-5">
-        "Uncover the thrill of adventure right here in Pakistan. From the
-        towering peaks to the serene coastlines
-        and the untouched beauty of our wilderness trails, our
-        national trips are designed to showcase the best that Pakistan has to
-        offer. Let’s turn your local journeys into unforgettable experiences."
-      </p>
+    <!--National TOurs-->
+    <div class="container-fluid mb-5">
+      <div
+        class="text-center mx-auto wow fadeInUp mb-5 pb-3"
+        data-wow-delay="0.2s"
+        style="max-width: 800px; max-height: 130px"
+      >
+        <h4 class="text-primary mt-5">Explore Your Homeland</h4>
+        <h1 class="display-5 mb-4">National Tours</h1>
+        <p class="mb-5">
+          "Uncover the thrill of adventure right here in Pakistan. From the
+          towering peaks to the serene coastlines
+          and the untouched beauty of our wilderness trails, our
+          national trips are designed to showcase the best that Pakistan has to
+          offer. Let’s turn your local journeys into unforgettable experiences."
+        </p>
+      </div>
+      <div
+        class="row text-center mx-auto wow fadeInUp mt-5 p-5"
+        data-wow-delay="0.2s"
+      >
+        <!-- Grid 1 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="img/8-DAYS-TRIP-TO-NARAN-HUNZA-SAKARDU-DEOSA.jpg"
+            />
+            <span class="price">Rs 35000</span>
+            <div class="card-body">
+              <h3 class="location">Naran, Hunza, Skardu & Deosai</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">8 Days Trip</p>
+              <p>Availability : 23rd to 31st Aug 2024</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://guidetopakistan.pk/wp-content/uploads/2024/05/hunza-valley.jpg"
+            />
+            <span class="price">Rs 21,500</span>
+            <div class="card-body">
+              <h3 class="location">Hunza & China Border</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">5 Days Trip</p>
+              <p>Availability: Every Friday to Wednesday</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://skardu.pk/wp-content/uploads/2022/11/malam-jabba-chairlift-720x620.jpg"
+            />
+            <span class="price">Rs 15,000</span>
+            <div class="card-body">
+              <h3 class="location">Swat, Kalam & Malam Jabba</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
+              <p>Availability: Every Friday to Sunday</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row text-center mx-auto wow fadeInUp p-5"
+        data-wow-delay="0.2s"
+      >
+        <!-- Grid 2 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://holidayplannerz.pk/wp-content/uploads/2022/04/2-2.jpg"
+            />
+            <span class="price">Rs 15,000</span>
+            <div class="card-body">
+              <h3 class="location">Swat, Kalam & Malam Jabba</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
+              <p>Availability: 12-15 September 2024</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/362/864/desktop-wallpaper-stock-of-jeep-mountains-naran-naran.jpg"
+            />
+            <span class="price">Rs 17,000</span>
+            <div class="card-body">
+              <h3 class="location">Naran, Kaghan & Babusar Top</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
+              <p>Availability : Every Thursday to Sunday</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://youimg1.tripcdn.com/target/1A0a1a0000019v62b9830.jpg?proc=source%2Ftrip"
+            />
+            <span class="price">Rs 23,000</span>
+            <div class="card-body">
+              <h3 class="location">Hunza & Khunjrab Pass</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">5 Days Trip</p>
+              <p>Availability: Every Friday to Wednesday</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row text-center mx-auto wow fadeInUp p-5"
+        data-wow-delay="0.2s"
+      >
+        <!-- Grid 3 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/01/25151852/Untitled-design-2024-01-25T124838.567-1600x900.jpg"
+            />
+            <span class="price">Rs 18,500</span>
+            <div class="card-body">
+              <h3 class="location">Swat & Kalam</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
+              <p>Availability: 5-8 November 2024</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="img/3-DAYS-EID-TRIP-TO-SAWAT-KALAM-MAHOODAND-LAKE.jpg"
+            />
+            <span class="price">Rs 22,500</span>
+            <div class="card-body">
+              <h3 class="location">Swat, Kalam & Mahoodand Lake</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
+              <p>Availability : 12-15 September 2024</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://pakistantravelplaces.com/wp-content/uploads/2020/09/saif-ul-malook-1.jpg"
+            />
+            <span class="price">Rs 23,000</span>
+            <div class="card-body">
+              <h3 class="location">Shogran, Naran, Lake <br>Saif ul Malook</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
+              <p>Availability: 24-27 October 2024</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row text-center mx-auto wow fadeInUp p-5"
+        data-wow-delay="0.2s"
+      >
+        <!-- Grid 4 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="img/7-DAYS-TRIP-TO-SHANGRILA-SKARDU-DEOSAI.jpg"
+            />
+            <span class="price">Rs 35,000</span>
+            <div class="card-body">
+              <h3 class="location">Shangrila, Skardu & Deosai</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">7 Days Trip</p>
+              <p>Availability : Every Wednesday to Tuesday</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://www.visitswatvalley.com/images/Kumrat-Valley.jpg"
+            />
+            <span class="price">Rs 18,500</span>
+            <div class="card-body">
+              <h3 class="location">Kumrat Valley</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
+              <p>Availability: Every Friday to Sunday</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card">
+            <img src="https://premiotravels.com/wp-content/uploads/2022/06/Fascinating-Kashmir-Arang-Kel-And-Ratti-Gali-Holiday-Travel-Tour-Package.jpg"
+            />
+            <span class="price">Rs 19,000</span>
+            <div class="card-body">
+              <h3 class="location">Ratti Gali & Arang Kel</h3>
+              <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">4 Days Trip</p>
+              <p>Availability: Every Friday to Monday</p>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="btn btn-primary rounded-pill text-white py-2 px-3"
+                  href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-<<<<<<< HEAD
 
     <!--International TOurs-->
     <div class="container-fluid mb-5 pb-5">
@@ -166,9 +480,7 @@
               </ul>              
               <p class="package-price">Rs 150,000 per person</p>
               <div class="text-center">
-
                 <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0" class="btn btn-primary bookNow">Book Now</a>
-
               </div>
             </div>
           </div>
@@ -176,7 +488,7 @@
         <!-- Grid 2 -->
         <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-4">
           <div class="package-card">
-            <img src="https://blog.umrahme.com/wp-content/uploads/2023/07/makkah1.jpg" alt="Umrah Package" />
+            <img src="img/pexels-saad-alkot-419901137-17864312.jpg" alt="Umrah Package" />
             <div class="package-details">
               <h2 class="package-title">15 Days Umrah Package</h2>
               <p class="package-description">8 Days in Makkah - 7 Days in Madinah</p>
@@ -203,9 +515,7 @@
               </ul>              
               <p class="package-price">Rs 195,000 per person</p>
               <div class="text-center">
-
                 <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0" class="btn btn-primary bookNow">Book Now</a>
-
               </div>
             </div>
           </div>
@@ -243,9 +553,7 @@
               </ul>              
               <p class="package-price">Rs 230,000 per person</p>
               <div class="text-center">
-
                 <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0" class="btn btn-primary bookNow">Book Now</a>
-
               </div>
             </div>
           </div>
@@ -280,9 +588,7 @@
               </ul>              
               <p class="package-price">Rs 350,000 per person</p>
               <div class="text-center">
-
                 <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0" class="btn btn-primary bookNow">Book Now</a>
-
               </div>
             </div>
           </div>
@@ -303,500 +609,119 @@
                   width="70%"
                   alt="Logo"
                 />
-=======
-    <div class="row text-center mx-auto wow fadeInUp mt-5 p-5" data-wow-delay="0.2s">
-      <!-- Grid 1 -->
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="img/8-DAYS-TRIP-TO-NARAN-HUNZA-SAKARDU-DEOSA.jpg" />
-          <span class="price">Rs 35000</span>
-          <div class="card-body">
-            <h3 class="location">Naran, Hunza, Skardu & Deosai</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">8 Days Trip</p>
-            <p>Availability : 23rd to 31st Aug 2024</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
->>>>>>> 948ecbe26ef09f0000b2cdb84beb4b4c995c2db1
               </a>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt text-primary me-3 mb-3"></i>
+                <p class="text-white mb-2 mt-4">
+                  Gulistan Colony near SE college, <br />Bahawalpur, Pakistan
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary me-3 mb-2"></i>
+                <p class="text-white mb-2">shaziakhan0100@gmail.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa fa-phone-alt text-primary me-3 mb-2"></i>
+                <p class="text-white mb-2">(+92) 302-7809400</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="https://guidetopakistan.pk/wp-content/uploads/2024/05/hunza-valley.jpg" />
-          <span class="price">Rs 21,500</span>
-          <div class="card-body">
-            <h3 class="location">Hunza & China Border</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">5 Days Trip</p>
-            <p>Availability: Every Friday to Wednesday</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="footer-item">
+              <br />
+              <h4 class="text-white mb-3">Quick Links</h4>
+              <a href="#"><i class="fas fa-angle-right me-2"></i>Home</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i>Destination</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i>Blog</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i>Testimonial</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i>About</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i>Contact</a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="https://skardu.pk/wp-content/uploads/2022/11/malam-jabba-chairlift-720x620.jpg" />
-          <span class="price">Rs 15,000</span>
-          <div class="card-body">
-            <h3 class="location">Swat, Kalam & Malam Jabba</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
-            <p>Availability: Every Friday to Sunday</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="footer-item">
+              <br />
+              <h4 class="text-white mb-4">Connect with Us</h4>
+              <div class="social-media mb-2 pb-2">
+                <a href="#" target="_blank"
+                  ><i
+                    class="fab fa-facebook-f text-primary me-3"
+                    style="font-size: 24px"
+                  ></i
+                ></a>
+                <a href="#" target="_blank"
+                  ><i
+                    class="fab fa-instagram text-primary mx-3"
+                    style="font-size: 24px"
+                  ></i
+                ></a>
+                <a href="#" target="_blank"
+                  ><i
+                    class="fab fa-linkedin-in text-primary mx-3"
+                    style="font-size: 24px"
+                  ></i
+                ></a>
+                <a href="#" target="_blank"
+                  ><i
+                    class="fab fa-youtube text-primary mx-3"
+                    style="font-size: 24px"
+                  ></i
+                ></a>
+              </div>
+              <br />
+              <div>
+                <p class="text-white mb-3">Payment Accepted</p>
+                <img src="img/payment.png" class="img-fluid" alt="Image" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row text-center mx-auto wow fadeInUp p-5" data-wow-delay="0.2s">
-      <!-- Grid 2 -->
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="https://holidayplannerz.pk/wp-content/uploads/2022/04/2-2.jpg" />
-          <span class="price">Rs 15,000</span>
-          <div class="card-body">
-            <h3 class="location">Swat, Kalam & Malam Jabba</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
-            <p>Availability: 12-15 September 2024</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              ><a href="#" class="border-bottom text-white"
+                ><i class="fas fa-copyright text-light me-2"></i>Adventure Trip
+                & Tour Services</a
+              >, All right reserved.</span
+            >
           </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img
-            src="https://e1.pxfuel.com/desktop-wallpaper/362/864/desktop-wallpaper-stock-of-jeep-mountains-naran-naran.jpg" />
-          <span class="price">Rs 17,000</span>
-          <div class="card-body">
-            <h3 class="location">Naran, Kaghan & Babusar Top</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
-            <p>Availability : Every Thursday to Sunday</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="https://youimg1.tripcdn.com/target/1A0a1a0000019v62b9830.jpg?proc=source%2Ftrip" />
-          <span class="price">Rs 23,000</span>
-          <div class="card-body">
-            <h3 class="location">Hunza & Khunjrab Pass</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">5 Days Trip</p>
-            <p>Availability: Every Friday to Wednesday</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
+          <div class="col-md-6 text-center text-md-end text-body">
+            Designed By
+            <a
+              class="border-bottom text-white"
+              href="https://inovamsolutions.com/"
+              >Inovam Solutions</a
+            >
           </div>
         </div>
       </div>
     </div>
-    <div class="row text-center mx-auto wow fadeInUp p-5" data-wow-delay="0.2s">
-      <!-- Grid 3 -->
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img
-            src="https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/01/25151852/Untitled-design-2024-01-25T124838.567-1600x900.jpg" />
-          <span class="price">Rs 18,500</span>
-          <div class="card-body">
-            <h3 class="location">Swat & Kalam</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
-            <p>Availability: 5-8 November 2024</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="img/3-DAYS-EID-TRIP-TO-SAWAT-KALAM-MAHOODAND-LAKE.jpg" />
-          <span class="price">Rs 22,500</span>
-          <div class="card-body">
-            <h3 class="location">Swat, Kalam & Mahoodand Lake</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
-            <p>Availability : 12-15 September 2024</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card" id="naran">
-          <img src="https://pakistantravelplaces.com/wp-content/uploads/2020/09/saif-ul-malook-1.jpg" />
-          <span class="price">Rs 23,000</span>
-          <div class="card-body">
-            <h3 class="location">Shogran, Naran, Lake <br>Saif ul Malook</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
-            <p>Availability: 24-27 October 2024</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row text-center mx-auto wow fadeInUp p-5" data-wow-delay="0.2s">
-      <!-- Grid 4 -->
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="img/7-DAYS-TRIP-TO-SHANGRILA-SKARDU-DEOSAI.jpg" />
-          <span class="price">Rs 35,000</span>
-          <div class="card-body">
-            <h3 class="location">Shangrila, Skardu & Deosai</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">7 Days Trip</p>
-            <p>Availability : Every Wednesday to Tuesday</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img src="https://www.visitswatvalley.com/images/Kumrat-Valley.jpg" />
-          <span class="price">Rs 18,500</span>
-          <div class="card-body">
-            <h3 class="location">Kumrat Valley</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">3 Days Trip</p>
-            <p>Availability: Every Friday to Sunday</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="card">
-          <img
-            src="https://premiotravels.com/wp-content/uploads/2022/06/Fascinating-Kashmir-Arang-Kel-And-Ratti-Gali-Holiday-Travel-Tour-Package.jpg" />
-          <span class="price">Rs 19,000</span>
-          <div class="card-body">
-            <h3 class="location">Ratti Gali & Arang Kel</h3>
-            <p style="font-size: larger; color: rgba(51, 51, 51, 0.897);">4 Days Trip</p>
-            <p>Availability: Every Friday to Monday</p>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary rounded-pill text-white py-2 px-3"
-                href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0">
-                Book Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- Copyright End -->
 
-  <!--International TOurs-->
-  <div class="container-fluid mb-5 pb-5">
-    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s"
-      style="max-width: 800px; max-height: 130px; margin-bottom: 6rem;">
-      <h4 class="text-primary mt-5">Explore The World</h4>
-      <h1 class="display-5 mb-4">International Tours</h1>
-      <p class="">
-        "Embark on a global adventure and experience the world beyond borders.
-        Whether you're exploring the vibrant cultures, the historic
-        landmarks, or the breathtaking landscapes,
-        our international tours offer a gateway to new experiences and
-        unforgettable memories. Discover the diversity and richness of our
-        planet, one country at a time, and let your travels redefine your
-        perspective."
-      </p>
-    </div>
-    <!--Row1-->
-    <div class="row justify-content-center mt-5 pt-5 mx-5 wow fadeInUp" data-wow-delay="0.2s">
-      <!-- Grid 1 -->
-      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-4">
-        <div class="package-card">
-          <img src="https://blog.umrahme.com/wp-content/uploads/2023/07/makkah1.jpg" alt="Umrah Package" />
-          <div class="package-details">
-            <h2 class="package-title">7 Days Umrah Package</h2>
-            <p class="package-description">4 Days in Makkah - 3 Days in Madinah</p>
-            <h5>Inclusions:</h5>
-            <ul class="package-features">
-              <li>
-                <div class="feature-item">
-                  <i class="fas fa-plane"></i>
-                  <span>Return ticket</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-hotel"></i>
-                  <span>Hotel</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-address-card"></i>
-                  <span>Visa</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-utensils"></i>
-                  <span>Breakfast & dinner</span>
-                </div>
-              </li>
-            </ul>
-            <p class="package-price">Rs 150,000 per person</p>
-            <div class="text-center">
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
 
-              <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
-                class="btn btn-primary bookNow">Book Now</a>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Grid 2 -->
-      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-4">
-        <div class="package-card">
-          <img src="img/pexels-saad-alkot-419901137-17864312.jpg" alt="Umrah Package" />
-          <div class="package-details">
-            <h2 class="package-title">15 Days Umrah Package</h2>
-            <p class="package-description">8 Days in Makkah - 7 Days in Madinah</p>
-            <h5>Inclusions:</h5>
-            <ul class="package-features">
-              <li>
-                <div class="feature-item">
-                  <i class="fas fa-plane"></i>
-                  <span>Return ticket</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-hotel"></i>
-                  <span>Hotel</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-address-card"></i>
-                  <span>Visa</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-utensils"></i>
-                  <span>Breakfast & dinner</span>
-                </div>
-              </li>
-            </ul>
-            <p class="package-price">Rs 195,000 per person</p>
-            <div class="text-center">
-
-              <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
-                class="btn btn-primary bookNow">Book Now</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Row2-->
-    <div class="row justify-content-center mt-2 mx-5 wow fadeInUp" data-wow-delay="0.2s">
-      <!-- Grid 1 -->
-      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-4">
-        <div class="package-card">
-          <img src="https://wallpapers.com/images/featured/madina-rwqyn59mnvgsex76.jpg" alt="Umrah Package" />
-          <div class="package-details">
-            <h2 class="package-title">21 Days Umrah Package</h2>
-            <p class="package-description">11 Days in Makkah - 10 Days in Madinah</p>
-            <h5>Inclusions:</h5>
-            <ul class="package-features">
-              <li>
-                <div class="feature-item">
-                  <i class="fas fa-plane"></i>
-                  <span>Return ticket</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-hotel"></i>
-                  <span>Hotel</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-address-card"></i>
-                  <span>Visa</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-utensils"></i>
-                  <span>Breakfast & dinner</span>
-                </div>
-              </li>
-            </ul>
-            <p class="package-price">Rs 230,000 per person</p>
-            <div class="text-center">
-
-              <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
-                class="btn btn-primary bookNow">Book Now</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Grid 2 -->
-      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-4">
-        <div class="package-card">
-          <img src="https://gulf-insider.fabianca.com/wp-content/uploads/2021/03/thumb2.jpg" alt="Umrah Package" />
-          <div class="package-details">
-            <h2 class="package-title">Ramadan Umrah Package</h2>
-            <p class="package-description">15 Days in Makkah - 15 Days in Madinah</p>
-            <h5>Inclusions:</h5>
-            <ul class="package-features">
-              <li>
-                <div class="feature-item">
-                  <i class="fas fa-plane"></i>
-                  <span>Return ticket</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-hotel"></i>
-                  <span>Hotel</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-address-card"></i>
-                  <span>Visa</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-utensils"></i>
-                  <span>Breakfast & dinner</span>
-                </div>
-              </li>
-            </ul>
-            <p class="package-price">Rs 350,000 per person</p>
-            <div class="text-center">
-
-              <a href="https://api.whatsapp.com/send/?phone=%2B923027809400&text=Thank+you+for+reaching+out.&type=phone_number&app_absent=0"
-                class="btn btn-primary bookNow">Book Now</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Start -->
-  <div class="container-fluid footer py-4 wow fadeIn" data-wow-delay="0.2s">
-    <div class="container py-4">
-      <div class="row g-5">
-        <div class="col-md-6 col-lg-6 col-xl-4">
-          <div class="footer-item">
-            <a href="home.html" class="p-0">
-              <img src="img/Adventure-tour-and-travels-Logo-white-1024x212.png" class="pb-3" width="70%" alt="Logo" />
-            </a>
-            <div class="d-flex align-items-center">
-              <i class="fas fa-map-marker-alt text-primary me-3 mb-3"></i>
-              <p class="text-white mb-2 mt-4">
-                Gulistan Colony near SE college, <br />Bahawalpur, Pakistan
-              </p>
-            </div>
-            <div class="d-flex align-items-center">
-              <i class="fas fa-envelope text-primary me-3 mb-2"></i>
-              <p class="text-white mb-2">shaziakhan0100@gmail.com</p>
-            </div>
-            <div class="d-flex align-items-center">
-              <i class="fa fa-phone-alt text-primary me-3 mb-2"></i>
-              <p class="text-white mb-2">(+92) 302-7809400</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-4">
-          <div class="footer-item">
-            <br />
-            <h4 class="text-white mb-3">Quick Links</h4>
-            <a href="#"><i class="fas fa-angle-right me-2"></i>Home</a>
-            <a href="#"><i class="fas fa-angle-right me-2"></i>Destination</a>
-            <a href="#"><i class="fas fa-angle-right me-2"></i>Blog</a>
-            <a href="#"><i class="fas fa-angle-right me-2"></i>Testimonial</a>
-            <a href="#"><i class="fas fa-angle-right me-2"></i>About</a>
-            <a href="#"><i class="fas fa-angle-right me-2"></i>Contact</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-4">
-          <div class="footer-item">
-            <br />
-            <h4 class="text-white mb-4">Connect with Us</h4>
-            <div class="social-media mb-2 pb-2">
-              <a href="#" target="_blank"><i class="fab fa-facebook-f text-primary me-3"
-                  style="font-size: 24px"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-instagram text-primary mx-3" style="font-size: 24px"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin-in text-primary mx-3"
-                  style="font-size: 24px"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-youtube text-primary mx-3" style="font-size: 24px"></i></a>
-            </div>
-            <br />
-            <div>
-              <p class="text-white mb-3">Payment Accepted</p>
-              <img src="img/payment.png" class="img-fluid" alt="Image" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Footer End -->
-
-  <!-- Copyright Start -->
-  <div class="container-fluid copyright py-4">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-md-6 text-center text-md-start mb-md-0">
-          <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                class="fas fa-copyright text-light me-2"></i>Adventure Trip
-              & Tour Services</a>, All right reserved.</span>
-        </div>
-        <div class="col-md-6 text-center text-md-end text-body">
-          Designed By
-          <a class="border-bottom text-white" href="https://inovamsolutions.com/">Inovam Solutions</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Copyright End -->
-
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-  <!-- Template Javascript -->
-  <script src="js/destination.js"></script>
-  <script src="js/about.js"></script>
-</body>
-
+    <!-- Template Javascript -->
+    <script src="js/destination.js"></script>
+    <script src="js/about.js"></script>
+  </body>
 </html>
