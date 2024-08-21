@@ -177,8 +177,8 @@
 @media (max-width: 991px) {
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 8px 15px;
-        border: 1px solid var(--bs-primary);
-        color: var(--bs-primary);
+        border: 1px solid white;
+        color: white;
     }
 
     .sticky-top .navbar-light .navbar-nav .nav-link {
@@ -210,6 +210,8 @@
     .header-carousel .header-carousel-item img {
         height: 1200px;
     }
+
+    
 }
 
 .header-carousel .owl-nav .owl-prev {
