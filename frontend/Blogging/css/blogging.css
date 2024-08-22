@@ -208,6 +208,70 @@
     .sticky-top .navbar-light .navbar-nav .nav-link {
         padding: 12px 0;
     }
+
+    #navbarCollapse {
+        background-color: rgba(22, 126, 126, 0.92); /* adjust the opacity value to your liking */
+        padding: 15px;
+        position: absolute;
+        top: 105%; /* Positioning it right under the navbar */
+        left: -6%;   /* Aligning it to the left edge */
+        width: 112%; /* Making sure it spans the entire width */
+    }
+
+    .navbar-collapse {
+        padding: 0; /* remove padding */
+        margin: 0; /* remove margin */
+    }
+    
+    .nav-bar .navbar-nav .nav-link.active,
+    .nav-bar .navbar-nav .nav-link:hover {
+      color: #ffffff; 
+      font-weight: 20px;
+      position: relative;
+    }
+    
+    .nav-bar .navbar-nav .nav-link.active::after,
+    .nav-bar .navbar-nav .nav-link:hover::after {
+      color: #ffffff;
+      content: '';
+      position: absolute;
+      left: 0%; /* Start from near the middle */
+      bottom: 0.5rem; /* Adjust the gap between text and underline */
+      width: 8%; /* Cover most of the text */
+      height: 2px; /* Thickness of the underline */
+      background: #ffffff; /* Underline color */
+      transition: width 0.1s ease, left 0.1s ease;
+    }
+    
+    .nav-bar .navbar-nav .nav-link:hover::after {
+      width: 10%; /* Extend to full width on hover */
+      left: 0; /* Start from the beginning on hover */ 
+    }
+    
+    .nav-bar.scrolled .navbar-nav .nav-link.active,
+    .nav-bar.scrolled .navbar-nav .nav-link:hover {
+      color: #ffffff; 
+      font-weight: 20px;
+      position: relative;
+    }
+    
+    .nav-bar.scrolled .navbar-nav .nav-link.active::after,
+    .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+      color: #ffffff;
+      content: '';
+      position: absolute;
+      left: 0%; /* Start from near the middle */
+      bottom: 0.5rem; /* Adjust the gap between text and underline */
+      width: 8%; /* Cover most of the text */
+      height: 2px; /* Thickness of the underline */
+      background: #ffffff; /* Underline color */
+      transition: width 0.1s ease, left 0.1s ease;
+    }
+    
+    .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+      width: 10%; /* Extend to full width on hover */
+      left: 0; /* Start from the beginning on hover */ 
+    }
 }
 /*** Navbar End ***/
 

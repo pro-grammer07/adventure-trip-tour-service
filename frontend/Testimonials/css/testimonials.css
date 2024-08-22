@@ -112,7 +112,79 @@
     height: 80px;
     border-bottom: 1px solid transparent;
   }
+  .navbar-light .navbar-nav .nav-link {
+    position: relative;
+    margin-right: 30px;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #ffffff; 
+    font-weight: 30px;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255, 0.3); 
+    position: relative;
+  }
   
+  .navbar-light .navbar-nav .nav-link:hover::after,
+  .navbar-light .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 20%; /* Start from near the middle */
+    bottom: 1rem; /* Adjust the gap between text and underline */
+    width: 60%; /* Cover most of the text */
+    height: 2px; /* Thickness of the underline */
+    background: #ffffff; /* Underline color */
+    transition: width 0.1s ease, left 0.1s ease;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Extend to full width on hover */
+    left: 0; /* Start from the beginning on hover */
+  }
+  
+  
+  .navbar-light .navbar-brand img {
+    max-height: 45px;
+    transition: .5s;
+    margin-bottom: 5px;
+  }
+  
+  .nav-bar.scrolled {
+    background-color: #008080;
+    opacity: 0.99;
+  }
+
+  .nav-bar.scrolled .navbar-nav .nav-link.active,
+  .nav-bar.scrolled .navbar-nav .nav-link:hover {
+    color: #ffffff; 
+    font-weight: 20px;
+    position: relative;
+  }
+  .nav-bar.scrolled .navbar-nav .nav-link.active::after,
+  .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+    color: #ffffff;
+    content: '';
+    position: absolute;
+    left: 20%; /* Start from near the middle */
+    bottom: 1rem; /* Adjust the gap between text and underline */
+    width: 60%; /* Cover most of the text */
+    height: 2px; /* Thickness of the underline */
+    background: #ffffff; /* Underline color */
+    transition: width 0.1s ease, left 0.1s ease;
+  }
+  
+  .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Extend to full width on hover */
+    left: 0; /* Start from the beginning on hover */ 
+  }
+
   .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 30px;
@@ -183,6 +255,70 @@
 
     .sticky-top .navbar-light .navbar-nav .nav-link {
         padding: 12px 0;
+    }
+
+    #navbarCollapse {
+        background-color: rgba(22, 126, 126, 0.92); /* adjust the opacity value to your liking */
+        padding: 15px;
+        position: absolute;
+        top: 105%; /* Positioning it right under the navbar */
+        left: -6%;   /* Aligning it to the left edge */
+        width: 112%; /* Making sure it spans the entire width */
+    }
+
+    .navbar-collapse {
+        padding: 0; /* remove padding */
+        margin: 0; /* remove margin */
+    }
+    
+    .nav-bar .navbar-nav .nav-link.active,
+    .nav-bar .navbar-nav .nav-link:hover {
+      color: #ffffff; 
+      font-weight: 20px;
+      position: relative;
+    }
+    
+    .nav-bar .navbar-nav .nav-link.active::after,
+    .nav-bar .navbar-nav .nav-link:hover::after {
+      color: #ffffff;
+      content: '';
+      position: absolute;
+      left: 0%; /* Start from near the middle */
+      bottom: 0.5rem; /* Adjust the gap between text and underline */
+      width: 8%; /* Cover most of the text */
+      height: 2px; /* Thickness of the underline */
+      background: #ffffff; /* Underline color */
+      transition: width 0.1s ease, left 0.1s ease;
+    }
+    
+    .nav-bar .navbar-nav .nav-link:hover::after {
+      width: 10%; /* Extend to full width on hover */
+      left: 0; /* Start from the beginning on hover */ 
+    }
+    
+    .nav-bar.scrolled .navbar-nav .nav-link.active,
+    .nav-bar.scrolled .navbar-nav .nav-link:hover {
+      color: #ffffff; 
+      font-weight: 20px;
+      position: relative;
+    }
+    
+    .nav-bar.scrolled .navbar-nav .nav-link.active::after,
+    .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+      color: #ffffff;
+      content: '';
+      position: absolute;
+      left: 0%; /* Start from near the middle */
+      bottom: 0.5rem; /* Adjust the gap between text and underline */
+      width: 8%; /* Cover most of the text */
+      height: 2px; /* Thickness of the underline */
+      background: #ffffff; /* Underline color */
+      transition: width 0.1s ease, left 0.1s ease;
+    }
+    
+    .nav-bar.scrolled .navbar-nav .nav-link:hover::after {
+      width: 10%; /* Extend to full width on hover */
+      left: 0; /* Start from the beginning on hover */ 
     }
 }
 /*** Navbar End ***/
