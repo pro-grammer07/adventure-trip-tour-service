@@ -231,7 +231,7 @@
     }
     
     #navbarCollapse {
-        background-color: rgba(22, 126, 126, 0.92); /* adjust the opacity value to your liking */
+        background-color: rgba(22, 126, 126, 0.9); /* adjust the opacity value to your liking */
         padding: 15px;
         position: absolute;
         top: 105%; /* Positioning it right under the navbar */
