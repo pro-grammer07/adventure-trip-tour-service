@@ -27,7 +27,6 @@ export const sendContactEmail = async (customer, res) => {
         <br>
                 <h1>Customer Info:</h1>
                 <h2>Name: ${customer.name}</h2>
-                <h3>Phone: ${customer.phone}</h3>
                 <h3>Email: ${customer.email}</h3>
                 <p>Message: "${customer.message}"</p>`,
   };

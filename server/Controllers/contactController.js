@@ -4,7 +4,7 @@ import Contact from "../Models/contactModel.js";
 export const createContact = async (req, res, next) => {
   const { name, phone, email, message } = req.body;
 
-  if (!(name && phone && email && message)) {
+  if (!(name && email && message)) {
     next("Provide required fields");
     return;
   }
